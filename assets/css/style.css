@@ -58,10 +58,15 @@ body {
 #sb-toggle {
   font-size: 14px;
 }
+#sky-logo{
+margin-right: auto;
+margin-left: 0.6rem;
+}
 /* header end */
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+  
 }
 
 /* iPads ----------- */
