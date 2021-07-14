@@ -76,7 +76,7 @@ body {
 }
 
 /* searchbar */
-#searchbargrp {
+.searchbargrp {
   width: 50%;
 }
 #sbarbtn {
@@ -85,10 +85,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-#searchbargrp input::placeholder {
+.searchbargrp input::placeholder {
   font-size: 14px;
 }
+
+
 /* bulk quote btn */
 #bulkquote {
   background-color: var(--orange);
@@ -154,10 +155,15 @@ body {
   padding-left: 0.8rem;
   justify-content: space-around;
 }
+
 /* header end */
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+  /* searchbar */
+  #searchbarmob{
+    width: 100%;
+  }
 }
 
 /* iPads ----------- */
