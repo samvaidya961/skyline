@@ -158,7 +158,12 @@ body {
   padding-left: 0.8rem;
   justify-content: space-around;
 }
-
+/* all category */
+#allcatbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* header end */
 
 /* Smartphones ----------- */
