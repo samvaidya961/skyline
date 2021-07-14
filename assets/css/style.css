@@ -5,12 +5,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 
 :root {
   --blue: #4156a7;
+  /* blue : #5eb1e3 
+  bluish grey: #def0fc
+  */
+  --grey: #def0fc;
   --orange: #f7ca00;
 }
-
+.bg-grey {
+  background-color: var(--grey);
+  color: black;
+}
 body {
   padding-top: 56px;
 }
@@ -58,15 +70,94 @@ body {
 #sb-toggle {
   font-size: 14px;
 }
-#sky-logo{
-margin-right: auto;
-margin-left: 0.6rem;
+#sky-logo {
+  margin-right: auto;
+  margin-left: 0.6rem;
+}
+
+/* searchbar */
+#searchbargrp {
+  width: 45%;
+}
+#sbarbtn {
+  background-color: var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchbargrp input::placeholder {
+  font-size: 14px;
+}
+/* bulk quote btn */
+#bulkquote {
+  background-color: var(--orange);
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 7px;
+}
+
+/* search bar dropdrown */
+#sbdropdown {
+  background-color: rgb(240, 240, 240);
+  color: rgb(90, 90, 90);
+  font-size: 13px;
+}
+
+/* language change */
+#langchange {
+  font-size: 13px;
+}
+
+#langchange:hover > .dropdown-menu {
+  display: block;
+}
+
+/* account and orders */
+.accountordersdropd:hover > .dropdown-menu {
+  display: block;
+}
+.accountordersdropd-inner {
+  color: white;
+  font-size: 13px;
+}
+.acntordersspan {
+  display: inline-block;
+  margin-top: -7px;
+}
+
+/* location */
+#locicon {
+  padding-top: 19px;
+  margin-right: 2px;
+}
+#locicon span {
+  font-size: 17px;
+}
+
+/* cart */
+#shoppingcart {
+  display: flex;
+}
+#cartcount {
+  display: inline-flex;
+  height: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3px;
+}
+
+/* all nav items to be in a flex box */
+#desknavitems {
+  display: flex;
+  padding-left: 0.8rem;
+  justify-content: space-around;
 }
 /* header end */
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
-  
 }
 
 /* iPads ----------- */
@@ -75,4 +166,5 @@ margin-left: 0.6rem;
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 851px) {
+ 
 }
