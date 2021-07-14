@@ -163,6 +163,11 @@ body {
   /* searchbar */
   #searchbarmob{
     width: 100%;
+    background-color: var(--blue);
+    padding: 0.3rem 0.2rem;
+  }
+  #searchbarmob input{
+    border: none;
   }
 }
 
