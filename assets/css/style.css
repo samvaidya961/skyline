@@ -164,7 +164,7 @@ body {
   #searchbarmob{
     width: 100%;
     background-color: var(--blue);
-    padding: 0.3rem 0.2rem;
+    padding: 0.3rem 0.4rem;
   }
   #searchbarmob input{
     border: none;
@@ -173,9 +173,21 @@ body {
 
 /* iPads ----------- */
 @media only screen and (min-device-width: 501px) and (max-device-width: 850px) {
+   /* searchbar */
+   #searchbarmob{
+    width: 100%;
+    background-color: var(--blue);
+    padding: 0.3rem 0.4rem;
+  }
+  #searchbarmob input{
+    border: none;
+  }
+
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 851px) {
- 
+ #searchbarmob{
+   display: none;
+ }
 }
