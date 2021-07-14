@@ -177,11 +177,9 @@ body {
   #cartcount {
     height: 0.9rem;
     margin-left: 3px;
-    font-size: 10px;
+    font-size: 9px;
   }
-  #cartimg img{
-    height: 27px;
-  }
+
 }
 
 /* iPads ----------- */
@@ -202,7 +200,7 @@ body {
   #searchbarmob {
     display: none;
   }
-  #shoppingcart {
+  #shoppingcart-mob {
     display: none;
   }
 }
