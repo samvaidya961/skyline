@@ -27,31 +27,6 @@ a:hover {
 
 /* header start */
 
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  color: rgba(255, 255, 255, 0.75);
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-.nav-underline .nav-link {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-size: 0.875rem;
-  color: #6c757d;
-}
 
 /* cutom header */
 .bluebg {
@@ -69,6 +44,9 @@ a:hover {
 /* searchbar */
 .searchbargrp {
   width: 45%;
+}
+.searchbargrp input{
+  border: none;
 }
 #sbarbtn {
   background-color: var(--orange);
@@ -147,10 +125,12 @@ a:hover {
   justify-content: space-around;
 }
 /* all category */
-#allcatbtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#allcatbtn{
+  margin-top: 1rem;
+}
+#allcatbtn img{
+ height: 1.5rem;
+ 
 }
 #categoriessticktop{
   position: sticky;
@@ -346,6 +326,40 @@ a:hover {
   font-weight: 550;
 }
 
+/* category scoller */
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: auto;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 0rem;
+  overflow-x: auto;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.categoryscollitem{
+  display: flex;
+  flex-direction: column;
+}
+.categoryscollitem img{
+  height: 3rem;
+}
+.categoryscollitem span{
+  font-size: 12px;
+  color: black;
+}
+.categoryscollitem span:hover{
+  color: var(--blue);
+}
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
