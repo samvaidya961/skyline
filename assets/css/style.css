@@ -168,6 +168,7 @@ body {
 #mobsidebarheader{
   background-color: var(--grey);
   padding: 0.8rem;
+  padding-top: 0.9rem;
   box-shadow: -1px -1px 3px var(--grey);
 }
 #mobsidebarheader a{
@@ -175,7 +176,7 @@ body {
   color: black;
 }
 #mobsidebarusername p{
-  color: rgb(36, 36, 36);
+  color: black;
   margin-bottom: 0px;
   font-weight: 550;
 }
@@ -188,7 +189,7 @@ body {
 
 .mobsidebaritem{
   padding: 0.6rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
   padding-top: 1.3rem;
   background-color: #fff;
   margin-bottom: 3px;
@@ -200,6 +201,7 @@ body {
 .mobsidebaritem a{
   margin-bottom: 1.5rem;
   font-weight: 550;
+  color: rgb(70, 70, 70);
 }
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
