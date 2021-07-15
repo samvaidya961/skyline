@@ -411,6 +411,12 @@ a:hover {
     background-color: #4155a73d;
   }
 
+
+  /* carousel */
+  .nextprevbtn{
+    display: none;
+  }
+
   /* footer : get in touch with us form */
   #getusintouchform form {
     padding: 1rem;
@@ -447,6 +453,11 @@ a:hover {
   #selectlocicon {
     margin-right: 0.7rem;
   }
+  /* carousel */
+  .nextprevbtn{
+    display: none;
+  }
+
 }
 
 /* Desktops and laptops ----------- */
