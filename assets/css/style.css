@@ -27,7 +27,6 @@ a:hover {
 
 /* header start */
 
-
 /* cutom header */
 .bluebg {
   background-color: var(--blue);
@@ -45,7 +44,7 @@ a:hover {
 .searchbargrp {
   width: 45%;
 }
-.searchbargrp input{
+.searchbargrp input {
   border: none;
 }
 #sbarbtn {
@@ -125,14 +124,13 @@ a:hover {
   justify-content: space-around;
 }
 /* all category */
-#allcatbtn{
+#allcatbtn {
   margin-top: 1rem;
 }
-#allcatbtn img{
- height: 1.5rem;
- 
+#allcatbtn img {
+  height: 1.5rem;
 }
-#categoriessticktop{
+#categoriessticktop {
   position: sticky;
   top: 0;
 }
@@ -346,20 +344,27 @@ a:hover {
   -webkit-overflow-scrolling: touch;
 }
 
-.categoryscollitem{
+.categoryscollitem {
   display: flex;
   flex-direction: column;
 }
-.categoryscollitem img{
+.categoryscollitem img {
   height: 3rem;
 }
-.categoryscollitem span{
+.categoryscollitem span {
   font-size: 12px;
   color: black;
 }
-.categoryscollitem span:hover{
+.categoryscollitem span:hover {
   color: var(--blue);
 }
+
+/* carousel indicators */
+#carindicators{
+z-index: 1;
+}
+
+
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
@@ -411,12 +416,10 @@ a:hover {
     background-color: #4155a73d;
   }
 
-
-  /* carousel */
-  .nextprevbtn{
+  /* all categories */
+  .nextprevbtn {
     display: none;
   }
-
   /* footer : get in touch with us form */
   #getusintouchform form {
     padding: 1rem;
@@ -453,11 +456,12 @@ a:hover {
   #selectlocicon {
     margin-right: 0.7rem;
   }
-  /* carousel */
-  .nextprevbtn{
+
+  
+  /* all categories */
+  .nextprevbtn {
     display: none;
   }
-
 }
 
 /* Desktops and laptops ----------- */
