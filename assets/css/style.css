@@ -254,14 +254,17 @@ body {
   color: var(--blue);
 }
 
-#footer .footer-top .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px;
+#getusintouchform input::placeholder{
+font-size: 14px;
 }
-
+#getusintouchform textarea::placeholder{
+  font-size: 14px;
+  }
+  #getusintouchform button{
+    font-size: 13px;
+    background-color: var(--blue);
+    color: white;
+  }
 #footer .footer-top .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px;
@@ -394,6 +397,11 @@ body {
     margin-bottom: 0.7rem;
     border: 1px solid var(--blue);
     background-color: #4155a73d;
+  }
+
+  /* footer : get in touch with us form */
+  #getusintouchform form{
+    padding: 1rem;
   }
 }
 
