@@ -188,6 +188,7 @@ body {
 .mobsidebaritem{
   padding: 0.6rem;
   padding-left: 2rem;
+  padding-top: 1.3rem;
   background-color: #fff;
   margin-bottom: 3px;
   display: flex;
@@ -196,7 +197,8 @@ body {
 }
 
 .mobsidebaritem a{
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 550;
 }
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
