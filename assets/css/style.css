@@ -190,18 +190,23 @@ body {
 .mobsidebaritem{
   padding: 0.6rem;
   padding-left: 1rem;
-  padding-top: 1.3rem;
+  padding-top: 1rem;
   background-color: #fff;
   margin-bottom: 3px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(88, 88, 88);
   padding-bottom: 0px;
 }
-
+.mobsidebaritem span{
+  font-size: 15px;
+  display: inline-block;
+  padding-top: 4px;
+padding-right: 6px;}
 .mobsidebaritem a{
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.1rem;
   font-weight: 550;
-  color: rgb(88, 88, 88);
+ 
 }
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
