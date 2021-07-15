@@ -33,13 +33,6 @@ body {
 
 /* header start */
 
-@media (max-width: 991.98px) {
-  .offcanvas-collapse {
-    position: fixed;
-    visibility: hidden;
-  }
-}
-
 .nav-scroller {
   position: relative;
   z-index: 2;
@@ -166,8 +159,14 @@ body {
 }
 /* header end */
 
+
+
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+  .offcanvas-collapse {
+    position: fixed;
+    visibility: hidden;
+  }
   /* searchbar */
   #searchbarmob {
     width: 100%;
@@ -184,12 +183,12 @@ body {
     margin-left: 3px;
     font-size: 9px;
   }
-
+  
   /* location select  */
-  #selectlocicon{
+  #selectlocicon {
     margin-right: 0.7rem;
   }
-  #selectlocicon span{
+  #selectlocicon span {
     font-size: 24px;
   }
 
@@ -211,8 +210,14 @@ body {
   }
 }
 
+
+
 /* iPads ----------- */
-@media only screen and (min-device-width: 501px) and (max-device-width: 850px) {
+@media only screen and (min-device-width: 501px) and (max-device-width: 1024px) {
+  .offcanvas-collapse {
+    position: fixed;
+    visibility: hidden;
+  }
   /* searchbar */
   #searchbarmob {
     width: 100%;
@@ -222,10 +227,24 @@ body {
   #searchbarmob input {
     border: none;
   }
+  /* cart */
+  #cartcount {
+    height: 0.9rem;
+    margin-left: 3px;
+    font-size: 9px;
+  }
+  #mob-cart {
+    display: flex;
+  }
+  /* location select  */
+  #selectlocicon {
+    margin-right: 0.7rem;
+  }
 }
 
+
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 851px) {
+@media only screen and (min-device-width: 1025px) {
   /* search bar of mobile */
   #searchbarmob {
     display: none;
@@ -258,6 +277,9 @@ body {
     border: 1px solid var(--blue);
     background-color: #4155a73d;
   }
+
+  /* location select mobile */
+  #selectlocicon{
+    display: none;
+  }
 }
-
-
