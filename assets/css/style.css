@@ -534,3 +534,81 @@ z-index: 1;
     margin-bottom: 1rem;
   }
 }
+
+
+/* products */
+html{
+  --lh: 1.3rem;
+  line-height: var(--lh);
+}
+.prod-img{
+  text-align: center;
+  background-image: url('bg.png');
+  background-size: cover;
+}
+.prod-img img{
+  height: 5rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.productdetails{
+  padding: 0.5rem;
+  text-align: center;
+}
+.prodname{
+  position: relative;
+  margin-bottom: 0px;
+  font-size: 13px;
+  font-weight: 550;
+  text-align: center;
+  --max-lines: 2;
+  max-height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden;
+}
+.productdetails img{
+  height: 0.6rem;
+}
+.prodprice{
+  font-size: 14px;
+  font-weight: 550;
+}
+.permtr{
+  font-size: 11px;
+}
+
+.procard h1{
+  margin-top: 0.6rem;
+  background-color: var(--blue);
+  color: white;
+  position: absolute;
+  left: -10px;
+  font-size: 13px;
+  width: 3rem;
+  padding: 4px 12px;
+  letter-spacing: 1px;
+  display: inline-block!important
+}
+.procard h1:before{
+  position: absolute;
+  content:'';
+  width: 17px;
+  height: 17px;
+  background-color: black;
+  transform: rotate(45deg);
+  z-index: -1;
+  top: 13px;
+  left: 3.5px;
+}
+.products{
+  display: flex;
+  justify-content: space-between;
+  padding: 01rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.procard{
+  box-shadow: -7px -1px 40px -1px rgba(194,194,194,1);
+  -webkit-box-shadow: -7px -1px 40px -1px rgba(194,194,194,1);
+  -moz-box-shadow: -7px -1px 40px -1px rgba(194,194,194,1);
+  width: 46%;
+}
