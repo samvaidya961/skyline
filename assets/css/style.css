@@ -251,7 +251,7 @@ body {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #ffc451;
+  color: var(--blue);
 }
 
 #footer .footer-top .footer-newsletter form {
