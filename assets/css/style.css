@@ -181,7 +181,7 @@ body {
 
 /* sidebar link items */
 #mobsidebaritems{
-  font-size: 14px;
+  font-size: 15px;
   background-color: #f3f3f3;
 }
 
@@ -196,7 +196,7 @@ body {
 }
 
 .mobsidebaritem a{
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
