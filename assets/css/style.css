@@ -162,6 +162,7 @@ body {
 /* sidebar in mobile and ipad */
 #mob-sidebar{
   width: 75%;
+  overflow-y: scroll;
 
 }
 #mobsidebarheader{
@@ -174,7 +175,7 @@ body {
   color: black;
 }
 #mobsidebarusername p{
-  color: black;
+  color: rgb(36, 36, 36);
   margin-bottom: 0px;
   font-weight: 550;
 }
