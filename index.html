@@ -59,6 +59,15 @@
         </a>
         <!-- logo end -->
 
+        <!-- location select mobile start -->
+        <a id="selectlocicon" href="" data-bs-toggle="offcanvas" data-bs-target="#locationoffcanvas"
+        aria-controls="locationoffcanvas">
+        <span class="material-icons">
+          location_on
+          </span>
+        </a>
+        <!-- location select mobile end -->
+
 
         <!-- mobile cart start-->
         <div id="mob-cart">
@@ -127,8 +136,8 @@
 
 
           <!-- select location start -->
-          <a id="locationselect" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-            aria-controls="offcanvasBottom" class="accountordersdropd-inner d-flex">
+          <a id="locationselect" data-bs-toggle="offcanvas" data-bs-target="#locationoffcanvas"
+            aria-controls="locationoffcanvas" class="accountordersdropd-inner d-flex">
             <p class="mb-0" id="locicon">
               <span class="material-icons">
                 location_on
@@ -145,7 +154,7 @@
           <!-- select location end -->
 
 
-          <!-- cart start-->
+          <!-- cart start desktop-->
           <div id="shoppingcart">
             <div id="cartimg">
               <img src="assets/images/shopping-cart.png" alt="">
@@ -201,18 +210,41 @@
       </div>
     </div>
     <!-- sidebar in mobile end -->
-    <!-- location offcanvas -->
 
-    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
+
+
+    <!-- location offcanvas -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="locationoffcanvas"
+      aria-labelledby="locationoffcanvasLabel">
+
       <div class="offcanvas-body small">
-        ...
+        <h6><strong>Choose Your Location</strong></h6>
+        <span class="text-secondary">Select a delivery location to see product availability and delivery options</span>
+
+        <div id="defaultaddress">
+          <span id="defname"><strong> Samruddhi Vaidya -</strong></span>
+          <span id="defcity"><strong>AURANGABAD -</strong> </span>
+          <span id="defpin">431009</span>
+          <p class="text-secondary mb-0">
+            <strong>
+              Current Address
+            </strong>
+          </p>
+        </div>
+
+        <a href="" class="text-primary"><small>Change or edit address</small></a>
+        <hr>
+
+        <div class="input-group mt-3 mb-3">
+          <input type="text" class="form-control" placeholder="Enter Your Pincode" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+          <button class="btn btn-secondary" type="button" id="button-addon2">
+            Check
+          </button>
+        </div>
       </div>
     </div>
-
+    <!-- location offcanvas end-->
 
 
     <div class="nav-scroller bg-body shadow-sm">
@@ -222,8 +254,8 @@
         <a id="allcatbtn" class="nav-link active" aria-current="page" href="#">
           <span class="material-icons">
             clear_all
-            </span>
-            <span>All</span>
+          </span>
+          <span>All</span>
         </a>
 
 

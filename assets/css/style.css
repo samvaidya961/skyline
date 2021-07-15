@@ -159,7 +159,7 @@ body {
   justify-content: space-around;
 }
 /* all category */
-#allcatbtn{
+#allcatbtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,6 +185,30 @@ body {
     font-size: 9px;
   }
 
+  /* location select  */
+  #selectlocicon{
+    margin-right: 0.7rem;
+  }
+  #selectlocicon span{
+    font-size: 24px;
+  }
+
+  #locationoffcanvas {
+    height: 47%;
+  }
+  #locationoffcanvas input::placeholder {
+    font-size: 12px;
+  }
+  #locationoffcanvas button {
+    font-size: 12px;
+  }
+  #defaultaddress {
+    padding: 0.5rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    border: 1px solid var(--blue);
+    background-color: #4155a73d;
+  }
 }
 
 /* iPads ----------- */
@@ -202,10 +226,38 @@ body {
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 851px) {
+  /* search bar of mobile */
   #searchbarmob {
     display: none;
   }
+
+  /* cart of mobile */
   #mob-cart {
     display: none;
   }
+
+  /* location set on offcanvas */
+  #locationoffcanvas {
+    width: 30%;
+    padding: 0.5rem;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    height: 45%;
+  }
+  #locationoffcanvas input::placeholder {
+    font-size: 13px;
+  }
+  #locationoffcanvas button {
+    font-size: 13px;
+  }
+  #defaultaddress {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--blue);
+    background-color: #4155a73d;
+  }
 }
+
+
