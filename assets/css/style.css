@@ -160,34 +160,33 @@ body {
 /* header end */
 
 /* sidebar in mobile and ipad */
-#mob-sidebar{
+#mob-sidebar {
   width: 75%;
   overflow-y: scroll;
-
 }
-#mobsidebarheader{
+#mobsidebarheader {
   background-color: var(--grey);
   padding: 0.8rem;
   padding-top: 0.9rem;
   box-shadow: -1px -1px 3px var(--grey);
 }
-#mobsidebarheader a{
+#mobsidebarheader a {
   font-size: 12px;
   color: black;
 }
-#mobsidebarusername p{
+#mobsidebarusername p {
   color: black;
   margin-bottom: 0px;
   font-weight: 550;
 }
 
 /* sidebar link items */
-#mobsidebaritems{
+#mobsidebaritems {
   font-size: 14px;
   background-color: #f3f3f3;
 }
 
-.mobsidebaritem{
+.mobsidebaritem {
   padding: 0.6rem;
   padding-left: 1rem;
   padding-top: 1rem;
@@ -198,16 +197,20 @@ body {
   color: rgb(88, 88, 88);
   padding-bottom: 0px;
 }
-.mobsidebaritem span{
+
+.mobsidebaritem span {
   font-size: 15px;
   display: inline-block;
   padding-top: 4px;
-padding-right: 6px;}
-.mobsidebaritem a{
+  padding-right: 6px;
+}
+
+.mobsidebaritem a {
   margin-bottom: 1.1rem;
   font-weight: 550;
- 
 }
+
+
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
