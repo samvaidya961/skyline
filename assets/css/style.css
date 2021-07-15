@@ -24,9 +24,6 @@ a:hover {
   background-color: var(--grey);
   color: black;
 }
-body {
-  padding-top: 56px;
-}
 
 /* header start */
 
@@ -71,7 +68,7 @@ body {
 
 /* searchbar */
 .searchbargrp {
-  width: 50%;
+  width: 45%;
 }
 #sbarbtn {
   background-color: var(--orange);
@@ -90,6 +87,7 @@ body {
   font-size: 13px;
   font-weight: 600;
   padding: 6px 7px;
+  margin-left: 1.2rem;
 }
 
 /* search bar dropdrown */
@@ -154,12 +152,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+#categoriessticktop{
+  position: sticky;
+  top: 0;
+}
 /* header end */
 
 /* footer start */
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 #footer {
   background-color: var(--grey);
   padding: 0 0 30px 0;
@@ -168,7 +167,6 @@ body {
 }
 
 #footer .footer-top {
-  
   border-bottom: 1px solid white;
   padding: 60px 0 30px 0;
 }
@@ -184,7 +182,7 @@ body {
   color: black;
 }
 
-.footer-info img{
+.footer-info img {
   height: 2.5rem;
   margin-bottom: 2.5rem;
 }
@@ -254,17 +252,17 @@ body {
   color: var(--blue);
 }
 
-#getusintouchform input::placeholder{
-font-size: 14px;
-}
-#getusintouchform textarea::placeholder{
+#getusintouchform input::placeholder {
   font-size: 14px;
-  }
-  #getusintouchform button{
-    font-size: 13px;
-    background-color: var(--blue);
-    color: white;
-  }
+}
+#getusintouchform textarea::placeholder {
+  font-size: 14px;
+}
+#getusintouchform button {
+  font-size: 13px;
+  background-color: var(--blue);
+  color: white;
+}
 #footer .footer-top .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px;
@@ -295,10 +293,7 @@ font-size: 14px;
   padding-top: 30px;
 }
 
-
 /* footer end */
-
-
 
 /* sidebar in mobile and ipad */
 #mob-sidebar {
@@ -358,15 +353,18 @@ font-size: 14px;
     visibility: hidden;
   }
   /* searchbar */
-  #searchbarmob {
+  .searchbargrp {
     width: 100%;
     background-color: var(--blue);
-    padding: 0.3rem 0.4rem;
+    padding: 7px 0px 0px 0px;
   }
   #searchbarmob input {
     border: none;
   }
-
+  /* bulk quote */
+  #bulkquote {
+    display: none;
+  }
   /* cart */
   #cartcount {
     height: 0.9rem;
@@ -400,7 +398,7 @@ font-size: 14px;
   }
 
   /* footer : get in touch with us form */
-  #getusintouchform form{
+  #getusintouchform form {
     padding: 1rem;
   }
 }
@@ -412,13 +410,15 @@ font-size: 14px;
     visibility: hidden;
   }
   /* searchbar */
-  #searchbarmob {
+  .searchbargrp {
     width: 100%;
     background-color: var(--blue);
-    padding: 0.3rem 0.4rem;
+    padding: 7px 0px 0px 0px;
   }
-  #searchbarmob input {
-    border: none;
+
+  /* bulk quote */
+  #bulkquote {
+    display: none;
   }
   /* cart */
   #cartcount {
@@ -437,11 +437,10 @@ font-size: 14px;
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-device-width: 1025px) {
-  /* search bar of mobile */
-  #searchbarmob {
-    display: none;
+  /* searchbar */
+  .searchbargrp {
+    margin-left: 1rem;
   }
-
   /* cart of mobile */
   #mob-cart {
     display: none;

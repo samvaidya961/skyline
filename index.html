@@ -43,7 +43,7 @@
 
   <!-- header - navigation bar start-->
   <section>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bluebg" aria-label="Main navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bluebg" aria-label="Main navigation">
       <div class="container-fluid">
 
         <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
@@ -51,62 +51,59 @@
           <span id="sb-toggle" class="navbar-toggler-icon"></span>
         </button>
 
-
-
         <!-- logo -->
         <a id="sky-logo" class="navbar-brand mr-auto" href="#">
           <img src="assets/images/logo.png" alt="logo" height="24" class="d-inline-block align-text-top">
         </a>
         <!-- logo end -->
 
-        <!-- location select mobile start -->
-        <a id="selectlocicon" href="" data-bs-toggle="offcanvas" data-bs-target="#locationoffcanvas"
-          aria-controls="locationoffcanvas">
-          <span class="material-icons">
-            location_on
-          </span>
-        </a>
-        <!-- location select mobile end -->
+        <!-- bulk quote -->
+        <button id="bulkquote" class="btn btn-success btn-sm">
+          BULK QUOTE
+        </button>
+        <!-- bulk quote end -->
 
+           <!-- location select mobile start -->
+           <a id="selectlocicon" href="" data-bs-toggle="offcanvas" data-bs-target="#locationoffcanvas"
+           aria-controls="locationoffcanvas">
+           <span class="material-icons">
+             location_on
+           </span>
+         </a>
+         <!-- location select mobile end -->
+ 
+ 
+         <!-- mobile cart start-->
+         <div id="mob-cart">
+           <div id="shoppingcart-mob" class="d-flex">
+             <div id="cartimg">
+               <span class="material-icons">
+                 shopping_cart
+               </span>
+             </div>
+             <div id="cartcount" class="badge rounded-pill bg-grey">
+               43
+             </div>
+           </div>
+         </div>
+ 
+         <!-- mobile cart end -->
 
-        <!-- mobile cart start-->
-        <div id="mob-cart">
-          <div id="shoppingcart-mob" class="d-flex">
-            <div id="cartimg">
-              <span class="material-icons">
-                shopping_cart
-              </span>
-            </div>
-            <div id="cartcount" class="badge rounded-pill bg-grey">
-              43
-            </div>
-          </div>
+        <!-- searchbar -->
+        <div class="input-group searchbargrp">
+          <input type="text" class="form-control" placeholder="Search For Products And Categories"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button id="sbarbtn" class="btn" type="button" id="button-addon2">
+            <span class="material-icons">
+              search
+            </span>
+          </button>
         </div>
-
-        <!-- mobile cart end -->
-
+        <!-- searchbar end -->
 
         <!-- navbar items in desktop -->
         <div id="desknavitems" class="navbar-collapse offcanvas-collapse">
 
-          <!-- bulk quote -->
-          <button id="bulkquote" class="btn btn-success btn-sm">
-            BULK QUOTE
-          </button>
-          <!-- bulk quote end -->
-
-
-          <!-- searchbar -->
-          <div class="input-group searchbargrp">
-            <input type="text" class="form-control" placeholder="Search For Products And Categories"
-              aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button id="sbarbtn" class="btn" type="button" id="button-addon2">
-              <span class="material-icons">
-                search
-              </span>
-            </button>
-          </div>
-          <!-- searchbar end -->
 
           <!-- lang -->
           <div id="langchange" class="dropdown">
@@ -183,7 +180,7 @@
     </nav>
 
     <!-- searchbar in mobile-->
-    <div id="searchbarmob" class="input-group searchbargrp">
+    <!-- <div id="searchbarmob" class="input-group searchbargrp">
       <input type="text" class="form-control" placeholder="Search For Products And Categories"
         aria-label="Recipient's username" aria-describedby="button-addon2">
       <button id="sbarbtn" class="btn" type="button" id="button-addon2">
@@ -191,7 +188,7 @@
           search
         </span>
       </button>
-    </div>
+    </div> -->
     <!-- searchbar end -->
 
 
@@ -332,33 +329,36 @@
     <!-- location offcanvas end-->
 
 
-    <div class="nav-scroller bg-body shadow-sm">
-      <nav class="nav nav-underline" aria-label="Secondary navigation">
-
-
-        <a id="allcatbtn" class="nav-link active" aria-current="page" href="#">
-          <span class="material-icons">
-            clear_all
-          </span>
-          <span>All</span>
-        </a>
-
-
-        <a class="nav-link" href="#">
-          Friends
-          <span class="badge bg-light text-dark rounded-pill align-text-bottom">27</span>
-        </a>
-        <a class="nav-link" href="#">Explore</a>
-        <a class="nav-link" href="#">Suggestions</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-      </nav>
-    </div>
+   
 
   </section>
+
+  <div id="categoriessticktop" class="nav-scroller bg-body shadow-sm">
+    <nav class="nav nav-underline" aria-label="Secondary navigation">
+
+
+      <a id="allcatbtn" class="nav-link active" aria-current="page" href="#">
+        <span class="material-icons">
+          clear_all
+        </span>
+        <span>All</span>
+      </a>
+
+
+      <a class="nav-link" href="#">
+        Friends
+        <span class="badge bg-light text-dark rounded-pill align-text-bottom">27</span>
+      </a>
+      <a class="nav-link" href="#">Explore</a>
+      <a class="nav-link" href="#">Suggestions</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#">Link</a>
+    </nav>
+  </div>
+
   <!-- header - navigation bar end -->
 
 
@@ -447,7 +447,8 @@
               <h4>Get In Touch With Us</h4>
               <form action="">
                 <div class="mb-3">
-                  <input type="email" class="form-control border-0" id="exampleFormControlInput1" placeholder="Your Email ID">
+                  <input type="email" class="form-control border-0" id="exampleFormControlInput1"
+                    placeholder="Your Email ID">
                 </div>
                 <div class="mb-3">
                   <textarea class="form-control border-0" id="exampleFormControlTextarea1" rows="2"
@@ -455,7 +456,7 @@
                 </div>
                 <button id="sendmsgbtn" class="btn w-100">Send</button>
               </form>
-           
+
             </div>
 
           </div>
