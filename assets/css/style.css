@@ -159,8 +159,45 @@ body {
 }
 /* header end */
 
+/* sidebar in mobile and ipad */
+#mob-sidebar{
+  width: 75%;
 
+}
+#mobsidebarheader{
+  background-color: var(--grey);
+  padding: 0.8rem;
+  box-shadow: -1px -1px 3px var(--grey);
+}
+#mobsidebarheader a{
+  font-size: 12px;
+  color: black;
+}
+#mobsidebarusername p{
+  color: black;
+  margin-bottom: 0px;
+  font-weight: 550;
+}
 
+/* sidebar link items */
+#mobsidebaritems{
+  font-size: 14px;
+  background-color: #f3f3f3;
+}
+
+.mobsidebaritem{
+  padding: 0.6rem;
+  padding-left: 2rem;
+  background-color: #fff;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px;
+}
+
+.mobsidebaritem a{
+  margin-bottom: 1rem;
+}
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
@@ -183,7 +220,7 @@ body {
     margin-left: 3px;
     font-size: 9px;
   }
-  
+
   /* location select  */
   #selectlocicon {
     margin-right: 0.7rem;
@@ -209,8 +246,6 @@ body {
     background-color: #4155a73d;
   }
 }
-
-
 
 /* iPads ----------- */
 @media only screen and (min-device-width: 501px) and (max-device-width: 1024px) {
@@ -242,7 +277,6 @@ body {
   }
 }
 
-
 /* Desktops and laptops ----------- */
 @media only screen and (min-device-width: 1025px) {
   /* search bar of mobile */
@@ -253,6 +287,11 @@ body {
   /* cart of mobile */
   #mob-cart {
     display: none;
+  }
+
+  /* language change in desktop */
+  #langchangeitems {
+    font-size: 13px;
   }
 
   /* location set on offcanvas */
@@ -279,7 +318,33 @@ body {
   }
 
   /* location select mobile */
-  #selectlocicon{
+  #selectlocicon {
     display: none;
+  }
+
+  /* account and orders div */
+  #acountordersdiv {
+    padding: 1rem;
+    font-size: 14px;
+    width: 20vw;
+  }
+  #youracntitemlist {
+    display: flex;
+    flex-direction: column;
+  }
+  #youracntitemlist a {
+    margin-bottom: 0.2rem;
+    font-size: 13px;
+  }
+  #youracntitemlist a:hover {
+    text-decoration: underline #4156a7;
+    color: #4156a7;
+  }
+  /* sign out button in account and orders */
+  #signoutbtn {
+    background-color: var(--orange);
+    color: black;
+    font-size: 13px;
+    margin-bottom: 1rem;
   }
 }

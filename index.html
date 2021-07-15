@@ -61,9 +61,9 @@
 
         <!-- location select mobile start -->
         <a id="selectlocicon" href="" data-bs-toggle="offcanvas" data-bs-target="#locationoffcanvas"
-        aria-controls="locationoffcanvas">
-        <span class="material-icons">
-          location_on
+          aria-controls="locationoffcanvas">
+          <span class="material-icons">
+            location_on
           </span>
         </a>
         <!-- location select mobile end -->
@@ -114,7 +114,7 @@
               aria-expanded="false">
               En
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <ul id="langchangeitems" class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <li><button class="dropdown-item" type="button">Marathi</button></li>
               <li><button class="dropdown-item" type="button">Japanese</button></li>
               <li><button class="dropdown-item" type="button">German</button></li>
@@ -129,7 +129,18 @@
               <span>Hello, Samruddhi</span> <br><strong class="acntordersspan">Account & Orders</strong>
             </a>
             <div id="acountordersdiv" class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              account & Orders
+              <p><strong>Your Account</strong></p>
+
+              <button id="signoutbtn" class="w-100 btn">Sign Out</button>
+
+              <div id="youracntitemlist">
+                <a href="">Your Account</a>
+                <a href="">Your Orders</a>
+                <a href="">Your Cart</a>
+                <a href="">Your Wishlist</a>
+                <a href="">Your Recommendation</a>
+                <a href="">Bulk Quote</a>
+              </div>
             </div>
           </div>
           <!-- account and orders dropdown end-->
@@ -187,27 +198,55 @@
     <!-- sidebar in mobile start -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="mob-sidebar" aria-labelledby="mob-sidebarLabel">
 
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div>
-          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
-          lists, etc.
-        </div>
-        <div class="dropdown mt-3">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-            data-bs-toggle="dropdown">
-            Dropdown button
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+      <!-- sidebar header -->
+      <div id="mobsidebarheader">
+        <a class="float-end" data-bs-dismiss="offcanvas" aria-label="Close">
+          <span class="material-icons">
+            close
+          </span>
+        </a>
+        <div id="mobsidebarusername">
+          <p><em>Hello, Samruddhi</em></p>
         </div>
       </div>
+      <!-- sidebar header end -->
+
+
+      <!-- sidebar links start -->
+      <div id="mobsidebaritems">
+
+        <div class="mobsidebaritem">
+          <a href="">Skyline Home</a>
+          <a href="">Shop By Category</a>
+          <a href="">Top Picks For You</a>
+          <a href="">Available Brands</a>
+          <a href="">Bulk Quote</a>
+        </div>
+
+        <div class="mobsidebaritem">
+          <a href="">Your Orders</a>
+          <a href="">Your Cart</a>
+          <a href="">Your Wishlist</a>
+        </div>
+
+
+        <div class="mobsidebaritem">
+          <a href="">Contact Us</a>
+        </div>
+
+
+        <div class="mobsidebaritem">
+          <a href="">Switch Account</a>
+          <a href="">Logout</a>
+        </div>
+
+
+
+
+
+      </div>
+      <!-- sidebar links end -->
+
     </div>
     <!-- sidebar in mobile end -->
 
