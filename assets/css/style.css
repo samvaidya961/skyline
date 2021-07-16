@@ -533,6 +533,22 @@ a:hover {
 #searchiconcat {
   margin-right: 1rem;
 }
+#allcategoriescont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.categoryitem {
+  text-align: center;
+  padding: 0.3rem;
+  /* background-image: url('bg.png'); */
+  /* block-size: cover; */
+}
+.categoryname p {
+  background-color: var(--grey);
+  font-weight: 550;
+  padding:3px;
+}
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
@@ -619,6 +635,18 @@ a:hover {
   #backbtnicon span {
     margin-right: 0.7rem;
   }
+
+  .categoryitem {
+    width: 44%;
+    margin: 3%;
+  }
+  .categoryimg img {
+    height: 5rem;
+  }
+  .categoryname p {
+    font-size: 13px;
+    background-color: var(--grey);
+  }
 }
 
 /* iPads ----------- */
@@ -682,6 +710,17 @@ a:hover {
   }
   #backbtnicon span {
     margin-right: 0.9rem;
+  }
+  .categoryitem {
+    width: 30%;
+    margin: 1.66%;
+  }
+  .categoryimg img {
+    height: 6rem;
+  }
+  .categoryname p {
+    font-size: 14px;
+    background-color: var(--grey);
   }
 }
 
@@ -805,5 +844,16 @@ a:hover {
   }
   #backbtnicon span {
     margin-right: 0.9rem;
+  }
+  .categoryitem {
+    width: 18%;
+    margin: 1%;
+  }
+  .categoryimg img {
+    height: 6rem;
+  }
+  .categoryname p {
+    font-size: 14px;
+    background-color: var(--grey);
   }
 }
