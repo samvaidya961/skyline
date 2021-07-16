@@ -600,8 +600,9 @@ a:hover {
     padding-top: 0rem;
   }
   .shopbybranditem {
-    padding: 1rem;
-    width: 25%;
+    padding: 1.4rem;
+    width: 30%;
+    margin: 0.3rem;
   }
   .shopbybranditem img {
     height: 1.2rem;
