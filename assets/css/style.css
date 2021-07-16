@@ -20,7 +20,7 @@ a:hover {
   --grey: #def0fc;
   --orange: #f7ca00;
 }
-.bg-orange{
+.bg-orange {
   background-color: var(--orange);
   color: black;
 }
@@ -41,7 +41,6 @@ a:hover {
   width: 4rem;
   margin-left: 0.8rem;
   margin-bottom: 1.6rem;
-
 }
 
 /* header start */
@@ -466,7 +465,6 @@ a:hover {
   flex-wrap: wrap;
   padding: 0.5rem;
   padding-left: 1rem;
-
 }
 .productscategorytabcont .procard {
   margin: 1%;
@@ -475,27 +473,30 @@ a:hover {
   font-size: 13px;
 }
 #tabcategory {
-  overflow: auto;
+  overflow-x: auto;
   white-space: nowrap;
+  overflow-y: hidden;
 }
 #tabcategory .nav-item {
   display: inline-block;
   margin-right: 1rem;
- 
 }
-.categorytabhead{
+.categorytabhead {
   color: #151515;
-  font-size: 15px;
+  font-size: 14px;
 }
 #catvisetabs .nav {
   flex-wrap: nowrap;
 }
-
+#tabcategory .active {
+  color: #4156a7;
+  font-weight: 600;
+}
 /* view all btn */
-.viewallbtn{
+.viewallbtn {
   padding: 0.5rem 0.7rem 0.5rem 0.7rem;
 }
-.viewallbtn button{
+.viewallbtn button {
   font-size: 13px;
   width: 100%;
 }
@@ -611,6 +612,28 @@ a:hover {
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-device-width: 1025px) {
+  /* all site heading */
+  .siteheading {
+    padding: 1.5rem 0rem 0rem 1rem;
+  }
+  .siteheading h6 {
+    font-size: 1.3rem;
+    font-weight: 550;
+  }
+  .headingunderline {
+    border-top: 2.6px solid var(--blue);
+    margin-left: 1rem;
+  }
+
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    height: 6px;
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
   /* searchbar */
   .searchbargrp {
     margin-left: 1rem;
