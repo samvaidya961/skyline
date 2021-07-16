@@ -520,7 +520,7 @@ a:hover {
   padding: 1rem;
   justify-content: center;
 }
-.shopbybranditem{
+.shopbybranditem {
   display: flex;
   justify-content: center;
 }
@@ -528,6 +528,12 @@ a:hover {
   background-color: white;
   box-shadow: 2px 2px 10px rgba(116, 116, 116, 0.3);
 }
+
+/* all categories page */
+#searchiconcat {
+  margin-right: 1rem;
+}
+
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
@@ -604,6 +610,14 @@ a:hover {
   #getusintouchform form {
     padding: 1rem;
   }
+
+  /* all categories page */
+  #allcathead {
+    font-size: 16px;
+  }
+  #backbtnicon span {
+    margin-right: 0.7rem;
+  }
 }
 
 /* iPads ----------- */
@@ -659,6 +673,14 @@ a:hover {
   }
   .shopbybranditem img {
     height: 1.3rem;
+  }
+
+  /* all categories page */
+  #allcathead {
+    font-size: 16px;
+  }
+  #backbtnicon span {
+    margin-right: 0.9rem;
   }
 }
 
@@ -768,5 +790,19 @@ a:hover {
   }
   .shopbybranditem img {
     height: 2rem;
+  }
+
+  /* all categories page */
+  #searchiconcat span {
+    display: inline-block;
+    padding-top: 8px;
+    font-size: 33px;
+  }
+  /* all categories page */
+  #allcathead {
+    font-size: 18px;
+  }
+  #backbtnicon span {
+    margin-right: 0.9rem;
   }
 }
