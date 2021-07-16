@@ -20,6 +20,10 @@ a:hover {
   --grey: #def0fc;
   --orange: #f7ca00;
 }
+.bg-orange{
+  background-color: var(--orange);
+  color: black;
+}
 .bg-grey {
   background-color: var(--grey);
   color: black;
@@ -27,7 +31,7 @@ a:hover {
 
 /* all site heading */
 .siteheading {
-  padding: 0.9rem 0rem 0rem 0.8rem;
+  padding: 1.1rem 0rem 0rem 0.8rem;
 }
 .siteheading h6 {
   font-weight: 550;
@@ -36,7 +40,8 @@ a:hover {
   border-top: 2px solid var(--blue);
   width: 4rem;
   margin-left: 0.8rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
+
 }
 
 /* header start */
@@ -485,6 +490,16 @@ a:hover {
 #catvisetabs .nav {
   flex-wrap: nowrap;
 }
+
+/* view all btn */
+.viewallbtn{
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+}
+.viewallbtn button{
+  font-size: 13px;
+  width: 100%;
+}
+
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
