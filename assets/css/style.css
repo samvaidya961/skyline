@@ -549,7 +549,11 @@ a:hover {
   font-weight: 550;
   padding:3px;
 }
-
+.categoryitem:hover{
+  color: var(--blue);
+  cursor: pointer;
+  border: 0.5px solid var(--blue);
+}
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
