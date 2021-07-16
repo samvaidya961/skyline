@@ -469,6 +469,9 @@ a:hover {
 .productscategorytabcont .procard {
   margin: 1%;
 }
+.productscategorytabcont .discount {
+  width: 3.5rem;
+}
 .categorytabhead {
   font-size: 13px;
 }
@@ -492,6 +495,14 @@ a:hover {
   color: #4156a7;
   font-weight: 600;
 }
+
+/* products price cut through */
+.cutprice {
+  font-size: 11px;
+  margin-right: 4px;
+  text-decoration: line-through;
+}
+
 /* view all btn */
 .viewallbtn {
   padding: 0.5rem 0.7rem 0.5rem 0.7rem;
