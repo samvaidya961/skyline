@@ -547,13 +547,70 @@ a:hover {
 .categoryname p {
   background-color: var(--grey);
   font-weight: 550;
-  padding:3px;
+  padding: 3px;
 }
-.categoryitem:hover{
+.categoryitem:hover {
   color: var(--blue);
   cursor: pointer;
   box-shadow: 2px 2px 10px rgba(116, 116, 116, 0.3);
 }
+
+/* zoom image */
+.containerimages {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containerimages div {
+  margin: 10px;
+}
+
+.pictures {
+  width: 64px;
+}
+
+.pictures img {
+  margin-bottom: 6px;
+}
+
+.picture {
+  position: relative;
+  width: 420px;
+  height: 606px;
+}
+
+.containerimages img {
+  width: 100%;
+}
+
+.img-active {
+  box-shadow: 2px 2px 10px rgba(119, 119, 119, 0.733);
+}
+
+.rect {
+  position: absolute;
+  margin: 0px !important;
+  padding: 0;
+  width: 200px;
+  height: 150px;
+  background-color: #78787c4d;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.zoom {
+  position: relative;
+  left: 20px;
+  box-shadow: 2px 2px 10px rgb(97, 97, 97);
+  opacity: 0;
+}
+
+.rect-active {
+  opacity: 1;
+}
+
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
