@@ -564,6 +564,7 @@ a:hover {
 
 .containerimages div {
   margin: 10px;
+  margin-right: 0px;
 }
 
 .pictures {
@@ -601,9 +602,7 @@ a:hover {
 }
 
 .zoom {
-  position: relative;
-  left: 20px;
-  box-shadow: 2px 2px 10px rgb(97, 97, 97);
+  box-shadow: 2px 2px 10px rgb(209, 209, 209);
   opacity: 0;
 }
 
@@ -611,6 +610,31 @@ a:hover {
   opacity: 1;
 }
 
+/* product info section */
+.prodinfocont {
+  padding: 2rem;
+  padding-left: 0px;
+}
+.prodinfoname p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.prodratings .material-icons{
+  color: orange;
+  margin-right: -2px;
+}
+#noratingsreviews{
+  font-size: 13px;
+  padding-top: 3px;
+  margin-left: 10px;
+}
+.prodpricees p{
+  font-size: 14px;
+  color: #5f5f5f;
+}
+.prodpricees .text-success{
+  font-size: 20px;
+}
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
