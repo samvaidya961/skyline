@@ -512,6 +512,22 @@ a:hover {
   width: 100%;
 }
 
+/* shop by brands */
+#shopbybrands {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+}
+.shopbybranditem{
+  display: flex;
+  justify-content: center;
+}
+.shopbybranditem:hover {
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(116, 116, 116, 0.3);
+}
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
@@ -572,6 +588,18 @@ a:hover {
     width: 46%;
   }
 
+  /* shop by brands */
+  #shopbybrands {
+    padding: 0.5rem;
+    padding-top: 0rem;
+  }
+  .shopbybranditem {
+    padding: 1rem;
+    width: 25%;
+  }
+  .shopbybranditem img {
+    height: 1rem;
+  }
   /* footer : get in touch with us form */
   #getusintouchform form {
     padding: 1rem;
@@ -618,6 +646,19 @@ a:hover {
   .productscategorytabcont .procard {
     margin: 1;
     width: 23%;
+  }
+
+  /* shop by brands */
+  #shopbybrands {
+    padding: 0.5rem;
+    padding-top: 0rem;
+  }
+  .shopbybranditem {
+    padding: 1rem;
+    width: 20%;
+  }
+  .shopbybranditem img {
+    height: 1.3rem;
   }
 }
 
@@ -717,5 +758,15 @@ a:hover {
   .productscategorytabcont .procard {
     margin: 1%;
     width: 18%;
+  }
+
+  /* shop by brands */
+  .shopbybranditem {
+    padding: 1.4rem;
+    width: 20%;
+    cursor: pointer;
+  }
+  .shopbybranditem img {
+    height: 2rem;
   }
 }
