@@ -541,8 +541,6 @@ a:hover {
 .categoryitem {
   text-align: center;
   padding: 0.3rem;
-  /* background-image: url('bg.png'); */
-  /* block-size: cover; */
 }
 .categoryname p {
   background-color: var(--grey);
@@ -621,28 +619,295 @@ a:hover {
   padding: 2rem;
   padding-left: 0px;
   margin-left: 30%;
-  width: 35%;
+  width: 45%;
 }
 .prodinfoname p {
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
-.prodratings .material-icons{
+#ratingsseparator {
+  margin-top: -5px;
+  color: rgb(167, 167, 167);
+}
+hr {
+  color: rgb(167, 167, 167);
+}
+.prodratings .material-icons {
   color: var(--orange);
   margin-right: -2px;
 }
-#noratingsreviews{
+#noratingsreviews {
   font-size: 13px;
   padding-top: 3px;
   margin-left: 10px;
 }
-.prodpricees p{
+.prodpricees p {
   font-size: 14px;
   color: #5f5f5f;
 }
-.prodpricees .text-success{
+.prodpricees .text-success {
   font-size: 20px;
 }
+.prodmoredetails .text-success {
+  font-weight: 550;
+}
+.prodmoredetails #soldby {
+  font-size: 14px;
+  margin-top: 3px;
+}
+.prodmodels p {
+  font-size: 14px;
+}
+
+/* product variants */
+.prodmodelsvariants {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.prodvariantitem {
+  border: 1px solid lightgrey;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+}
+.prodvariantitem:hover {
+  border: 1px solid var(--blue);
+  background-color: #4155a734;
+  cursor: pointer;
+}
+.prodvariantitemactive {
+  border: 1px solid var(--blue);
+  background-color: #4155a734;
+}
+.proddetailstable table {
+  margin-top: 1rem;
+  font-size: 13px;
+  margin-left: -8px;
+  width: auto;
+}
+.proddetailstable td {
+  padding-left: 1rem;
+}
+
+/* product description */
+.prodinfodesc li {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.prodinfodesc a {
+  font-size: 12px;
+  color: var(--blue);
+}
+.prodinfodesc a:hover {
+  text-decoration: underline var(--blue);
+}
+
+/* product add to cart box at right side */
+#prodaddtocartboxcont {
+  padding: 0.9rem;
+  padding-top: 2rem;
+  width: 20%;
+}
+.shareprod {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.shareprod span {
+  font-size: 14px;
+}
+.shareprod svg {
+  margin-left: 0.3rem;
+  color: rgb(11, 177, 11);
+}
+
+/* manual download */
+#manualdlink {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#manualdlink:hover {
+  color: var(--blue);
+}
+
+/* increment decrement btn */
+.quantityincdec {
+  display: flex;
+  justify-content: center;
+}
+.quantityincdec form {
+  display: flex;
+}
+.quantityincdec input {
+  width: 40px;
+  border: 1px solid lightgrey;
+  text-align: center;
+  font-size: 12px;
+}
+.quantityincdec button {
+  width: 30px;
+  border: 1px solid lightgrey;
+  text-align: center;
+}
+
+/* add to cart and buy button */
+.cartbuybtns{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.cartbuybtns button{
+  font-size: 13px;
+}
+.cartbuybtns #cart{
+  background-color: var(--blue);
+  color:white;
+  margin-bottom: 0.6rem;
+}
+.cartbuybtns #buy{
+  background-color: var(--blue);
+  color:white;
+}
+#bulkquotebtnincartbox{
+  font-size: 14px;
+}
+
+/* deliver to */
+.delivertoincart{
+font-size: 12px;
+margin-top: 1.5rem;
+}
+.delivertoincart a{
+  display: flex;
+}
+.delivertoincart a:hover{
+color: var(--blue);}
+.delivertoincart .material-icons{
+  font-size: 15px;
+  margin-right: 4px;
+}
+
+
+/* have any question */
+.haveanyqcont{
+  padding: 2rem;
+  padding-top: 0px;
+}
+.haveanyqinput span{
+  position: absolute;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-left: 10px;
+  font-size: 20px;
+  color: grey;
+}
+.haveanyqinput input{
+  padding-left: 2.2rem;
+  font-size: 14px;
+  width: 60%;
+}
+#postqbtn{
+  margin-left: 5px;
+}
+#postqbtn:hover{
+  color: lightgrey;
+}
+
+/* asked questions by customers */
+.askedqcustomer{
+font-size: 14px;
+padding-left: 2rem;
+width: 45%;
+}
+.askedqcustomer table{
+  width: auto;
+}
+.askedqcustomer .qcus{
+  color: var(--blue);
+}
+#qdate{
+font-size: 13px;
+color: rgb(118, 123, 124);
+}
+
+
+/* customer ratings and reviews */
+.customersection{
+  display: flex;
+  width: 100%;
+}
+.custreviewratingscont{
+  width: 50%;
+  padding-right: 2rem;
+}
+.custreviewratingscont .material-icons{
+  color: var(--orange);
+}
+#avgreview{
+  font-size: 14px;
+}
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.custrevrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.custrevbar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 15px; background-color: var(--orange);}
+.bar-4 {width: 30%; height: 15px; background-color: var(--orange);}
+.bar-3 {width: 10%; height: 15px; background-color: var(--orange);}
+.bar-2 {width: 4%; height: 15px; background-color: var(--orange);}
+.bar-1 {width: 15%; height: 15px; background-color: var(--orange);}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
