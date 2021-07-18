@@ -492,7 +492,8 @@ a:hover {
   flex-wrap: nowrap;
 }
 #tabcategory .active {
-  color: #4156a7;
+  color: white;
+  background-color: var(--blue);
   font-weight: 600;
 }
 
@@ -553,6 +554,10 @@ a:hover {
   box-shadow: 2px 2px 10px rgba(116, 116, 116, 0.3);
 }
 
+/* product info page start */
+#prodinfocontainer{
+  display: flex;
+}
 /* zoom image */
 .containerimages {
   padding: 15px;
@@ -625,10 +630,7 @@ a:hover {
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
-#ratingsseparator {
-  margin-top: -5px;
-  color: rgb(167, 167, 167);
-}
+
 hr {
   color: rgb(167, 167, 167);
 }
@@ -641,6 +643,28 @@ hr {
   padding-top: 3px;
   margin-left: 10px;
 }
+
+/* skyline verified */
+#verifiedbadge {
+  background-color: var(--blue);
+  color: white;
+  font-size: 13px;
+  padding: 0.2rem;
+  border-radius: 3px;
+  display: flex;
+  width: 8rem;
+  justify-content: center;
+  align-items: center;
+}
+#verifiedtxt {
+  color: var(--orange);
+  font-weight: 550;
+}
+#verifiedbadge .material-icons {
+  font-size: 13px;
+  margin-left: 0.3rem;
+}
+
 .prodpricees p {
   font-size: 14px;
   color: #5f5f5f;
@@ -757,49 +781,49 @@ hr {
 }
 
 /* add to cart and buy button */
-.cartbuybtns{
+.cartbuybtns {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
-.cartbuybtns button{
+.cartbuybtns button {
   font-size: 13px;
 }
-.cartbuybtns #cart{
+.cartbuybtns #cart {
   background-color: var(--blue);
-  color:white;
+  color: white;
   margin-bottom: 0.6rem;
 }
-.cartbuybtns #buy{
+.cartbuybtns #buy {
   background-color: var(--blue);
-  color:white;
+  color: white;
 }
-#bulkquotebtnincartbox{
+#bulkquotebtnincartbox {
   font-size: 14px;
 }
 
 /* deliver to */
-.delivertoincart{
-font-size: 12px;
-margin-top: 1.5rem;
+.delivertoincart {
+  font-size: 12px;
+  margin-top: 1.5rem;
 }
-.delivertoincart a{
+.delivertoincart a {
   display: flex;
 }
-.delivertoincart a:hover{
-color: var(--blue);}
-.delivertoincart .material-icons{
+.delivertoincart a:hover {
+  color: var(--blue);
+}
+.delivertoincart .material-icons {
   font-size: 15px;
   margin-right: 4px;
 }
 
-
 /* have any question */
-.haveanyqcont{
+.haveanyqcont {
   padding: 2rem;
   padding-top: 0px;
 }
-.haveanyqinput span{
+.haveanyqinput span {
   position: absolute;
   display: inline-block;
   padding-top: 0.5rem;
@@ -807,60 +831,59 @@ color: var(--blue);}
   font-size: 20px;
   color: grey;
 }
-.haveanyqinput input{
+.haveanyqinput input {
   padding-left: 2.2rem;
   font-size: 14px;
   width: 60%;
 }
-#postqbtn{
+#postqbtn {
   margin-left: 5px;
 }
-#postqbtn:hover{
+#postqbtn:hover {
   color: lightgrey;
 }
 
 /* asked questions by customers */
-.askedqcustomer{
-font-size: 14px;
-padding-left: 2rem;
-width: 45%;
+.askedqcustomer {
+  font-size: 14px;
+  padding-left: 2rem;
+  width: 45%;
 }
-.askedqcustomer table{
+.askedqcustomer table {
   width: auto;
 }
-.askedqcustomer .qcus{
+.askedqcustomer .qcus {
   color: var(--blue);
 }
-#qdate{
-font-size: 13px;
-color: rgb(118, 123, 124);
+#qdate {
+  font-size: 13px;
+  color: rgb(118, 123, 124);
 }
 
-
 /* customer ratings and reviews */
-.customersection{
+.customersection {
   display: flex;
   width: 100%;
 }
-.custreviewratingscont{
+.custreviewratingscont {
   width: 50%;
   padding-right: 2rem;
 }
-.custreviewratingscont .material-icons{
+.custreviewratingscont .material-icons {
   color: var(--orange);
 }
-#avgreview{
+#avgreview {
   font-size: 14px;
 }
 /* Three column layout */
 .side {
   float: left;
   width: 15%;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 .middle {
-  margin-top:10px;
+  margin-top: 10px;
   float: left;
   width: 70%;
 }
@@ -886,15 +909,36 @@ color: rgb(118, 123, 124);
 }
 
 /* Individual bars */
-.bar-5 {width: 60%; height: 15px; background-color: var(--orange);}
-.bar-4 {width: 30%; height: 15px; background-color: var(--orange);}
-.bar-3 {width: 10%; height: 15px; background-color: var(--orange);}
-.bar-2 {width: 4%; height: 15px; background-color: var(--orange);}
-.bar-1 {width: 15%; height: 15px; background-color: var(--orange);}
+.bar-5 {
+  width: 60%;
+  height: 15px;
+  background-color: var(--orange);
+}
+.bar-4 {
+  width: 30%;
+  height: 15px;
+  background-color: var(--orange);
+}
+.bar-3 {
+  width: 10%;
+  height: 15px;
+  background-color: var(--orange);
+}
+.bar-2 {
+  width: 4%;
+  height: 15px;
+  background-color: var(--orange);
+}
+.bar-1 {
+  width: 15%;
+  height: 15px;
+  background-color: var(--orange);
+}
 
 /* Responsive layout - make the columns stack on top of each other instead of next to each other */
 @media (max-width: 400px) {
-  .side, .middle {
+  .side,
+  .middle {
     width: 100%;
   }
   .right {
@@ -902,11 +946,13 @@ color: rgb(118, 123, 124);
   }
 }
 
+#breadcrumbproductinfo {
+  padding: 1rem;
+  font-size: 13px;
+  cursor: pointer;
+}
 
-
-
-
-
+/* product info page ends */
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
@@ -1005,6 +1051,50 @@ color: rgb(118, 123, 124);
     font-size: 13px;
     background-color: var(--grey);
   }
+
+  /* product info page */
+  /* product info section */
+  #prodinfocontainer{
+    flex-direction: column;
+    padding-left: 0px;
+  }
+  .prodinfocont {
+    padding: 1rem;
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+  .prodinfoname p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  /* customer question ans and rating scoreboard */
+  .customersection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .custreviewratingscont {
+    width: 100%;
+    padding: 2rem;
+  }
+  .askedqcustomer{
+    width: 100%;
+    font-size: 13px;
+    padding-left: 1rem;
+  }
+  /* have any question */
+  .haveanyqinput input {
+    padding-left: 2rem;
+    font-size: 13px;
+    width: 100%;
+  }
+/* add to cart buy options */
+  #prodaddtocartboxcont {
+    padding: 0.9rem;
+    width: 100%;
+  }
+  
 }
 
 /* iPads ----------- */

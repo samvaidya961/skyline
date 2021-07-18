@@ -425,10 +425,18 @@
 
     <!-- product info start -->
     <section>
-        <div id="prodinfocontainer" class="d-flex">
+        <nav id="breadcrumbproductinfo" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">Displays</li>
+                <li class="breadcrumb-item active" aria-current="page">Finolex 1.5 SQMM</li>
+
+            </ol>
+        </nav>
+        <div id="prodinfocontainer">
 
             <!-- product zoom start -->
-            <div class="containerimages">
+            <!-- <div class="containerimages">
                 <div class="pictures">
                     <img id="pic1" onmouseover="changeImage('assets/images/category3.png', 1)"
                         src="assets/images/category3.png">
@@ -448,7 +456,7 @@
                     <img id="pic" src="assets/images/category3.png">
                 </div>
                 <div class="zoom" id="zoom"></div>
-            </div>
+            </div> -->
             <!-- product zoom end -->
 
             <!-- product info start -->
@@ -477,6 +485,13 @@
                         2,608 ratings | 304 answered questions
                     </p>
                 </div>
+
+                <div id="verifiedbadge">
+                    <p class="mb-0">Skyline <span id="verifiedtxt">Verified</span><span class="material-icons">
+                            verified_user
+                        </span> </p>
+                </div>
+
                 <hr id="ratingsseparator">
                 <div class="prodpricees">
                     <p class="mb-1">MRP: <s><strong> ₹150.5</strong></s></p>
@@ -657,7 +672,7 @@
                             <p id="qdate">By Skyline Admin, on 4 July, 2021</p>
                         </td>
                     </tr>
-    
+
                     <tr>
                         <th scope="row">Question :</th>
                         <td class="qcus">What are the dimensions of this item?
@@ -670,7 +685,7 @@
                             <p id="qdate">By Skyline Admin, on 4 July, 2021</p>
                         </td>
                     </tr>
-    
+
                     <tr>
                         <th scope="row">Question :</th>
                         <td class="qcus">What is country of origin?</td>
@@ -682,7 +697,7 @@
                             <p id="qdate">By Skyline Admin, on 4 July, 2021</p>
                         </td>
                     </tr>
-    
+
                     <tr>
                         <th scope="row">Question :</th>
                         <td class="qcus">What are the dimensions of this item?
@@ -695,10 +710,10 @@
                             <p id="qdate">By Skyline Admin, on 4 July, 2021</p>
                         </td>
                     </tr>
-    
+
                 </table>
             </div>
-    
+
             <div class="custreviewratingscont">
                 <span class="material-icons">
                     star
@@ -717,7 +732,7 @@
                 </span>
                 <p id="avgreview" class="text-secondary">3.5 average based on 254 reviews.</p>
                 <hr style="border:3px solid #f1f1f1">
-    
+
                 <div class="custrevrow">
                     <div class="side">
                         <div>5 star</div>
@@ -777,177 +792,182 @@
                 </div>
             </div>
         </div>
-       
+
     </section>
     <!-- customer questions and reviews end -->
 
-<!-- products scroller top picks start -->
-<section>
-    <div class="siteheading">
-      <h6>
-        Related Products
-      </h6>
-    </div>
-    <div class="headingunderline"></div>
-
-    <div class="productscont">
-
-      <div class="procard card">
-        <h1 class="discount">4%</h1>
-        <div class="prod-img">
-          <img src="assets/images/category4.png" class="" alt="...">
+    <!-- products scroller top picks start -->
+    <section>
+        <div class="siteheading">
+            <h6>
+                Related Products
+            </h6>
         </div>
+        <div class="headingunderline"></div>
 
-        <div class="productdetails">
-          <a href="">
-            <p class="prodname">Polycab 1.5 Sqmm Single core Fr Pvc Ins. Copper Flexible Cable Black As Per Is 694</p>
-          </a>
-          <img src="assets/images/brand1.png" alt="">
-          <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
+        <div class="productscont">
+
+            <div class="procard card">
+                <h1 class="discount">4%</h1>
+                <div class="prod-img">
+                    <img src="assets/images/category4.png" class="" alt="...">
+                </div>
+
+                <div class="productdetails">
+                    <a href="">
+                        <p class="prodname">Polycab 1.5 Sqmm Single core Fr Pvc Ins. Copper Flexible Cable Black As Per
+                            Is 694</p>
+                    </a>
+                    <img src="assets/images/brand1.png" alt="">
+                    <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
+                </div>
+            </div>
+
+            <div class="procard card">
+                <h1 class="discount">13%</h1>
+                <div class="prod-img">
+                    <img src="assets/images/category1.png" class="" alt="...">
+                </div>
+
+                <div class="productdetails">
+                    <a href="">
+                        <p class="prodname">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 – 927863686504</p>
+                    </a>
+                    <img src="assets/images/brand1.png" alt="">
+                    <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹900 </span> ₹750
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="procard card">
+                <h1 class="discount">4%</h1>
+                <div class="prod-img">
+                    <img src="assets/images/category3.png" class="" alt="...">
+                </div>
+
+                <div class="productdetails">
+                    <a href="">
+                        <p class="prodname">Polycab 1.5 Sqmm Single core Fr Pvc Ins. Copper Flexible Cable Black As Per
+                            Is 694</p>
+                    </a>
+                    <img src="assets/images/brand1.png" alt="">
+                    <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
+                </div>
+            </div>
+
+            <div class="procard card">
+                <h1 class="discount">4%</h1>
+                <div class="prod-img">
+                    <img src="assets/images/category2.png" class="" alt="...">
+                </div>
+
+                <div class="productdetails">
+                    <a href="">
+                        <p class="prodname">PPO-AS : Portable Pulse Oximeter – Airosat. Made In India</p>
+                    </a>
+                    <img src="assets/images/brand1.png" alt="">
+                    <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
+                </div>
+            </div>
+
+            <div class="procard card">
+                <h1 class="discount">4%</h1>
+                <div class="prod-img">
+                    <img src="assets/images/category4.png" class="" alt="...">
+                </div>
+
+                <div class="productdetails">
+                    <a href="">
+                        <p class="prodname">Polycab 1.5 Sqmm Single core Fr Pvc Ins. Copper Flexible Cable Black As Per
+                            Is 694</p>
+                    </a>
+                    <img src="assets/images/brand1.png" alt="">
+                    <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
+                </div>
+            </div>
+
+            <div class="procard card">
+                <h1 class="discount">13%</h1>
+                <div class="prod-img">
+                    <img src="assets/images/category1.png" class="" alt="...">
+                </div>
+
+                <div class="productdetails">
+                    <a href="">
+                        <p class="prodname">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 – 927863686504</p>
+                    </a>
+                    <img src="assets/images/brand1.png" alt="">
+                    <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹900 </span> ₹750
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="procard card">
+                <h1 class="discount">4%</h1>
+                <div class="prod-img">
+                    <img src="assets/images/category3.png" class="" alt="...">
+                </div>
+
+                <div class="productdetails">
+                    <a href="">
+                        <p class="prodname">Polycab 1.5 Sqmm Single core Fr Pvc Ins. Copper Flexible Cable Black As Per
+                            Is 694</p>
+                    </a>
+                    <img src="assets/images/brand1.png" alt="">
+                    <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
+                </div>
+            </div>
+
+            <div class="procard card">
+                <h1 class="discount">4%</h1>
+                <div class="prod-img">
+                    <img src="assets/images/category2.png" class="" alt="...">
+                </div>
+
+                <div class="productdetails">
+                    <a href="">
+                        <p class="prodname">PPO-AS : Portable Pulse Oximeter – Airosat. Made In India</p>
+                    </a>
+                    <img src="assets/images/brand1.png" alt="">
+                    <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
+                </div>
+            </div>
+
+            <div class="procard card">
+                <h1 class="discount">4%</h1>
+                <div class="prod-img">
+                    <img src="assets/images/category3.png" class="" alt="...">
+                </div>
+
+                <div class="productdetails">
+                    <a href="">
+                        <p class="prodname">Polycab 1.5 Sqmm Single core Fr Pvc Ins. Copper Flexible Cable Black As Per
+                            Is 694</p>
+                    </a>
+                    <img src="assets/images/brand1.png" alt="">
+                    <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
+                </div>
+            </div>
+
+            <div class="procard card">
+                <h1 class="discount">4%</h1>
+                <div class="prod-img">
+                    <img src="assets/images/category2.png" class="" alt="...">
+                </div>
+
+                <div class="productdetails">
+                    <a href="">
+                        <p class="prodname">PPO-AS : Portable Pulse Oximeter – Airosat. Made In India</p>
+                    </a>
+                    <img src="assets/images/brand1.png" alt="">
+                    <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="procard card">
-        <h1 class="discount">13%</h1>
-        <div class="prod-img">
-          <img src="assets/images/category1.png" class="" alt="...">
-        </div>
-
-        <div class="productdetails">
-          <a href="">
-            <p class="prodname">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 – 927863686504</p>
-          </a>
-          <img src="assets/images/brand1.png" alt="">
-          <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹900 </span> ₹750
-
-          </p>
-        </div>
-      </div>
-
-      <div class="procard card">
-        <h1 class="discount">4%</h1>
-        <div class="prod-img">
-          <img src="assets/images/category3.png" class="" alt="...">
-        </div>
-
-        <div class="productdetails">
-          <a href="">
-            <p class="prodname">Polycab 1.5 Sqmm Single core Fr Pvc Ins. Copper Flexible Cable Black As Per Is 694</p>
-          </a>
-          <img src="assets/images/brand1.png" alt="">
-          <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
-        </div>
-      </div>
-
-      <div class="procard card">
-        <h1 class="discount">4%</h1>
-        <div class="prod-img">
-          <img src="assets/images/category2.png" class="" alt="...">
-        </div>
-
-        <div class="productdetails">
-          <a href="">
-            <p class="prodname">PPO-AS : Portable Pulse Oximeter – Airosat. Made In India</p>
-          </a>
-          <img src="assets/images/brand1.png" alt="">
-          <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
-        </div>
-      </div>
-
-      <div class="procard card">
-        <h1 class="discount">4%</h1>
-        <div class="prod-img">
-          <img src="assets/images/category4.png" class="" alt="...">
-        </div>
-
-        <div class="productdetails">
-          <a href="">
-            <p class="prodname">Polycab 1.5 Sqmm Single core Fr Pvc Ins. Copper Flexible Cable Black As Per Is 694</p>
-          </a>
-          <img src="assets/images/brand1.png" alt="">
-          <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
-        </div>
-      </div>
-
-      <div class="procard card">
-        <h1 class="discount">13%</h1>
-        <div class="prod-img">
-          <img src="assets/images/category1.png" class="" alt="...">
-        </div>
-
-        <div class="productdetails">
-          <a href="">
-            <p class="prodname">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 – 927863686504</p>
-          </a>
-          <img src="assets/images/brand1.png" alt="">
-          <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹900 </span> ₹750
-
-          </p>
-        </div>
-      </div>
-
-      <div class="procard card">
-        <h1 class="discount">4%</h1>
-        <div class="prod-img">
-          <img src="assets/images/category3.png" class="" alt="...">
-        </div>
-
-        <div class="productdetails">
-          <a href="">
-            <p class="prodname">Polycab 1.5 Sqmm Single core Fr Pvc Ins. Copper Flexible Cable Black As Per Is 694</p>
-          </a>
-          <img src="assets/images/brand1.png" alt="">
-          <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
-        </div>
-      </div>
-
-      <div class="procard card">
-        <h1 class="discount">4%</h1>
-        <div class="prod-img">
-          <img src="assets/images/category2.png" class="" alt="...">
-        </div>
-
-        <div class="productdetails">
-          <a href="">
-            <p class="prodname">PPO-AS : Portable Pulse Oximeter – Airosat. Made In India</p>
-          </a>
-          <img src="assets/images/brand1.png" alt="">
-          <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
-        </div>
-      </div>
-
-      <div class="procard card">
-        <h1 class="discount">4%</h1>
-        <div class="prod-img">
-          <img src="assets/images/category3.png" class="" alt="...">
-        </div>
-
-        <div class="productdetails">
-          <a href="">
-            <p class="prodname">Polycab 1.5 Sqmm Single core Fr Pvc Ins. Copper Flexible Cable Black As Per Is 694</p>
-          </a>
-          <img src="assets/images/brand1.png" alt="">
-          <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
-        </div>
-      </div>
-
-      <div class="procard card">
-        <h1 class="discount">4%</h1>
-        <div class="prod-img">
-          <img src="assets/images/category2.png" class="" alt="...">
-        </div>
-
-        <div class="productdetails">
-          <a href="">
-            <p class="prodname">PPO-AS : Portable Pulse Oximeter – Airosat. Made In India</p>
-          </a>
-          <img src="assets/images/brand1.png" alt="">
-          <p class="mb-0 text-success prodprice"><span class="cutprice text-danger">₹13.2 </span> ₹15.2 </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- products scroller top picks end -->
+    </section>
+    <!-- products scroller top picks end -->
 
 
     <!--site footer start-->

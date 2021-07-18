@@ -11,7 +11,7 @@ btn.addEventListener("click", () => {
 });
 
 // main picture
-//   var picture = document.querySelector('#pic');
+  var picture = document.querySelector('#pic');
 
 // side pictures
 var picture1 = document.querySelector('#pic1');
