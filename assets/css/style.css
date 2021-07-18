@@ -830,7 +830,7 @@ hr {
 
 /* product more details */
 .moreproductdetails {
-  margin-left: 30%;
+  margin-left: 38%;
 }
 
 /* have any question */
@@ -1126,6 +1126,48 @@ hr {
   #custrevratmob {
     padding-left: 1rem;
   }
+
+  /* product image in mobile */
+  .containerimages {
+    display: flex;
+    flex-direction: column;
+    margin-top: -2rem;
+  }
+  .pictures {
+    display: flex;
+    width: 100%;
+  }
+  .picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    margin-left: 0px;
+    left: 0px;
+  }
+  .rect {
+    position: relative;
+    margin: 0px !important;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #78787c4d;
+    transform: translate(0%, 0%);
+    pointer-events: none;
+    opacity: 0;
+  }
+  #pic{
+    width: auto;
+    height: 200px;
+  }
+  #zoom{
+    display: none;
+  }
+ .pictures img{
+   width: 40px;
+   margin-right: 0.8rem;
+ }
 }
 
 /* iPads ----------- */
@@ -1200,6 +1242,16 @@ hr {
   .categoryname p {
     font-size: 14px;
     background-color: var(--grey);
+  }
+
+  /* product info page */
+  #custrevratmob {
+    display: none;
+  }
+  .askedqcustomer {
+    font-size: 13px;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
