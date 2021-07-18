@@ -744,9 +744,19 @@ hr {
 }
 .shareprod svg {
   margin-left: 0.4rem;
-  color: var(--blue);
 }
-
+.shareprod #whatsappshare {
+  color: rgb(18, 168, 18);
+}
+.shareprod #mailshare {
+  color: rgb(233, 39, 39);
+}
+.shareprod #instashare {
+  color: #bc2a8d;
+}
+.shareprod #fbshare {
+  color: rgb(55, 0, 255);
+}
 /* manual download */
 #manualdlink {
   font-size: 13px;
@@ -1093,7 +1103,7 @@ hr {
     padding: 1rem;
     padding-top: 0px;
   }
-  
+
   .askedqcustomer {
     width: 100%;
     font-size: 13px;
@@ -1110,14 +1120,12 @@ hr {
     padding: 0.9rem;
     width: 100%;
   }
-  .prodaddtocartboxcont{
+  .prodaddtocartboxcont {
     padding-top: 0px;
   }
-  #custrevratmob{
+  #custrevratmob {
     padding-left: 1rem;
   }
-
-
 }
 
 /* iPads ----------- */
@@ -1328,9 +1336,8 @@ hr {
     background-color: var(--grey);
   }
 
-/* product info page */
-#custrevratmob{
-  display: none;
-}
-
+  /* product info page */
+  #custrevratmob {
+    display: none;
+  }
 }
