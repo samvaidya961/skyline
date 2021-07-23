@@ -969,6 +969,25 @@ hr {
 
 /* product info page ends */
 
+/* register-login user page start */
+.registeruserform {
+  width: 36%;
+  margin-left: 32%;
+  padding: 2rem;
+  box-shadow: 2px 2px 10px lightgrey;
+  border-radius: 5px;
+}
+.registeruserform input {
+  font-size: 12px;
+}
+.registeruserform .form-floating label {
+  color: grey;
+}
+.registerloginbtn button{
+  background-color: var(--orange);
+}
+/* register-login user page ends */
+
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
@@ -1455,14 +1474,14 @@ hr {
     justify-content: center;
     align-items: center;
   }
-  .procard:hover img {
-    transition: transform 1s;
-    transform: scale(1.2);
+  .procard:hover .prod-img img {
+    transition: transform 1.2s;
+    transform: scale(1.25);
   }
+
   .onhoverdetails .btn {
     font-size: 12px;
   }
-
   .onhoverdetails span {
     font-size: 18px;
     color: white;
@@ -1491,7 +1510,6 @@ hr {
   }
   #quickviewproductmodal .modal-body {
     display: flex;
-   
   }
   #quickviewproductmodal .carousel-item img {
     margin: auto;
@@ -1515,7 +1533,7 @@ hr {
   .quickviewmodalactions {
     display: flex;
   }
-  
+
   .quickviewcartbuybtn {
     font-size: 13px;
     margin-left: 0.5rem;
