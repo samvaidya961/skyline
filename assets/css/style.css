@@ -1215,8 +1215,8 @@ hr {
 
   /* register-login user page start */
   .registeruserform {
-    width: 96%;
-    margin-left: 2%;
+    width: 92%;
+    margin-left: 4%;
     padding: 1.2rem;
   }
 }
