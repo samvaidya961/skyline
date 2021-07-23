@@ -971,23 +971,36 @@ hr {
 
 /* register-login user page start */
 .registeruserform {
-  width: 36%;
-  margin-left: 32%;
+  width: 34%;
+  margin-left: 33%;
   padding: 2rem;
+  padding-top: 1rem;
   box-shadow: 2px 2px 10px lightgrey;
   border-radius: 5px;
 }
 .registeruserform input {
   font-size: 14px;
 }
-.registeruserform label{
+.registeruserform label {
   font-size: 13px;
 }
-.registerloginbtn button{
+.registerloginbtn button {
   background-color: var(--orange);
 }
-.mandatoryfield{
+.registeruserform .small {
+  font-size: 13px;
+}
+.mandatoryfield {
   color: rgb(199, 6, 6);
+}
+.signupinlink {
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-size: 14px;
+  color: var(--blue);
+}
+.signupinlink a:hover {
+  text-decoration: underline var(--blue);
 }
 
 /* register-login user page ends */
@@ -1199,6 +1212,13 @@ hr {
   .procard:hover .onhoverdetails {
     display: none;
   }
+
+  /* register-login user page start */
+  .registeruserform {
+    width: 96%;
+    margin-left: 2%;
+    padding: 1.2rem;
+  }
 }
 
 /* iPads ----------- */
@@ -1321,6 +1341,13 @@ hr {
   }
   .procard:hover .onhoverdetails {
     display: none;
+  }
+
+  /* register-login user page start */
+  .registeruserform {
+    width: 50%;
+    margin-left: 25%;
+    padding: 2rem;
   }
 }
 
