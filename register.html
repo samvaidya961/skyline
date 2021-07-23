@@ -58,38 +58,45 @@
     <!-- header - navigation bar end -->
 
     <!-- register form start -->
-    <div class="registeruserform m-auto mt-4">
-            <h4 class="mb-4 text-center">
-                Sign Up
-            </h4>
-          
+    <div class="registeruserform mt-4 mb-4">
+        <h4 class="mb-4 text-center">
+            Sign Up
+        </h4>
+
         <form action="">
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" placeholder="User Name">
-                <label for="floatingInput">User Name</label>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">User Name<span class="mandatoryfield">*</span>
+                </label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
             </div>
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" placeholder="Mobile Number">
-                <label for="floatingInput">Mobile Number</label>
+            <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Mobile Number<span class="mandatoryfield">*</span>
+                </label>
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="">
             </div>
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" placeholder="Email Id">
-                <label for="floatingInput">Email Id</label>
+            <div class="mb-3">
+                <label for="exampleFormControlInput3" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="">
             </div>
             <hr>
-            <div class="form-floating mb-3">
-                <input type="password" class="form-control" placeholder="Password">
-                <label for="floatingPassword">Password</label>
+            <div class="mb-3">
+                <label for="exampleFormControlInput4" class="form-label">Create Password<span class="mandatoryfield">*</span>
+                </label>
+                <input type="password" class="form-control" id="exampleFormControlInput4" placeholder="">
             </div>
 
-            <div class="form-floating mb-3">
-                <input type="password" class="form-control" placeholder="Confirm Password">
-                <label for="floatingPassword">Confirm Password</label>
+            <div class="mb-3">
+                <label for="exampleFormControlInput5" class="form-label">Confirm Password<span class="mandatoryfield">*</span>
+                </label>
+                <input type="password" class="form-control" id="exampleFormControlInput5" placeholder="">
             </div>
 
-            <div class="registerloginbtn">
+            <div class="registerloginbtn mb-2">
                 <button class="btn w-100">Register</button>
             </div>
+            <span class="text-secondary small">
+                By continuing, you agree to Skyline's Terms and Conditions and the Privacy Policy.
+            </span>
         </form>
     </div>
     <!-- register form ends -->
