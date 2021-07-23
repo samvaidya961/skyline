@@ -1168,6 +1168,14 @@ hr {
     width: 40px;
     margin-right: 0.8rem;
   }
+
+  /* product card hover */
+  .onhoverdetails {
+    display: none;
+  }
+  .procard:hover .onhoverdetails {
+    display: none;
+  }
 }
 
 /* iPads ----------- */
@@ -1280,8 +1288,16 @@ hr {
     margin-left: 43%;
   }
   /* questions */
-  .askedqcustomer{
+  .askedqcustomer {
     width: 55%;
+  }
+
+  /* product card hover */
+  .onhoverdetails {
+    display: none;
+  }
+  .procard:hover .onhoverdetails {
+    display: none;
   }
 }
 
@@ -1421,5 +1437,106 @@ hr {
   /* product info page */
   #custrevratmob {
     display: none;
+  }
+
+  /* product on hover overlay */
+  .onhoverdetails {
+    display: none;
+  }
+  .procard:hover .onhoverdetails {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.596);
+    height: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .procard:hover img {
+    transition: transform 1s;
+    transform: scale(1.2);
+  }
+  .onhoverdetails .btn {
+    font-size: 12px;
+  }
+
+  .onhoverdetails span {
+    font-size: 18px;
+    color: white;
+  }
+  .onhoverdetails span:hover {
+    color: var(--orange);
+  }
+  .onhovercartbtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .quickviewbtn {
+    border: 1px solid white;
+    color: white;
+  }
+  .quickviewbtn:hover {
+    color: lightgrey;
+    background-color: rgba(0, 0, 0, 0.623);
+  }
+
+  /* product quick view modal */
+
+  #quickviewproductmodal .modal-header {
+    border-bottom: none;
+  }
+  #quickviewproductmodal .modal-body {
+    display: flex;
+   
+  }
+  #quickviewproductmodal .carousel-item img {
+    margin: auto;
+    height: 18rem;
+  }
+  .modalprodimg {
+    width: 50%;
+  }
+  .modalproductdetails {
+    width: 50%;
+    padding: 1rem;
+    margin-top: -2rem;
+  }
+  #quickviewproductmodal .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 5px;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .quickviewmodalactions {
+    display: flex;
+  }
+  .quickviewmodalactions .quantityincdec {
+    height: 2rem;
+  }
+  .quickviewcartbuybtn {
+    font-size: 13px;
+    margin-left: 0.5rem;
+  }
+  .quickviewcartbuybtn {
+    border-radius: 0px;
+  }
+  .quickviewcartbuybtn:hover {
+    color: rgb(230, 230, 230);
+  }
+  /* check product availibility */
+  .checkavailibilitypincode {
+    padding-top: 1.5rem;
+  }
+  .checkavailibilitypincode input::placeholder,
+  .btn {
+    font-size: 14px;
+  }
+  .checkavailibilitypincode .input-group {
+    width: 80%;
   }
 }
