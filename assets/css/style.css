@@ -978,14 +978,18 @@ hr {
   border-radius: 5px;
 }
 .registeruserform input {
-  font-size: 12px;
+  font-size: 14px;
 }
-.registeruserform .form-floating label {
-  color: grey;
+.registeruserform label{
+  font-size: 13px;
 }
 .registerloginbtn button{
   background-color: var(--orange);
 }
+.mandatoryfield{
+  color: rgb(199, 6, 6);
+}
+
 /* register-login user page ends */
 
 /* Smartphones ----------- */
