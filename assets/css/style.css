@@ -1515,9 +1515,7 @@ hr {
   .quickviewmodalactions {
     display: flex;
   }
-  .quickviewmodalactions .quantityincdec {
-    height: 2rem;
-  }
+  
   .quickviewcartbuybtn {
     font-size: 13px;
     margin-left: 0.5rem;
