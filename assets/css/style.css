@@ -1002,6 +1002,37 @@ hr {
 .signupinlink a:hover {
   text-decoration: underline var(--blue);
 }
+.registeruserform textarea {
+  font-size: 14px;
+}
+.insightsaccount {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.insightbox {
+  min-width: 40%;
+  margin-right: 5%;
+  border: 1px solid rgb(231, 231, 231);
+  padding: 0.5rem;
+  border-radius: 5px;
+  border-top: 6px solid var(--blue);
+}
+.insightbox .count {
+  font-size: 1.3rem;
+}
+.insighttxt p {
+  color: grey;
+  font-size: 12px;
+  overflow-wrap: break-word;
+}
+.passwordfieldaccount input {
+  width: 73%;
+}
+.insightbox:hover{
+ color: var(--blue);
+ cursor: pointer;
+}
 
 /* register-login user page ends */
 
@@ -1349,6 +1380,15 @@ hr {
     margin-left: 25%;
     padding: 2rem;
   }
+
+  /* your account */
+  .insightsaccount {
+    justify-content: space-between;
+  }
+  .insightbox {
+    min-width: 30%;
+    margin-right: 0%;
+  }
 }
 
 /* Desktops and laptops ----------- */
@@ -1585,5 +1625,13 @@ hr {
   }
   .checkavailibilitypincode .input-group {
     width: 80%;
+  }
+
+  /* your account */
+  .insightsaccount {
+    justify-content: space-between;
+  }
+  .insightbox {
+    min-width: 30%;
   }
 }
