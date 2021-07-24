@@ -1002,9 +1002,7 @@ hr {
 .signupinlink a:hover {
   text-decoration: underline var(--blue);
 }
-.registeruserform textarea {
-  font-size: 14px;
-}
+
 .insightsaccount {
   display: flex;
   overflow-x: auto;
