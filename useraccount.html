@@ -36,7 +36,7 @@
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
 
-    <title>Sign Up</title>
+    <title>Your Account</title>
 </head>
 
 <body>
@@ -60,53 +60,84 @@
     <!-- register form start -->
     <div class="registeruserform mt-4 mb-4">
         <h4 class="mb-4 text-center">
-            Sign Up
+            Your Account
         </h4>
 
         <form action="">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">User Name<span class="mandatoryfield">*</span>
                 </label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <input type="text" class="form-control" id="exampleFormControlInput1" value="NameExample">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput2" class="form-label">Mobile Number<span
+                <label for="exampleFormControlInput2" class="form-label">Mobile Number 1<span
                         class="mandatoryfield">*</span>
                 </label>
-                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="">
+                <input type="text" class="form-control" id="exampleFormControlInput2" value="9988776655">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput3" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="">
-            </div>
-            
-            <div class="mb-3">
-                <label for="exampleFormControlInput4" class="form-label">Create Password<span
-                        class="mandatoryfield">*</span>
+                <label for="exampleFormControlInput3" class="form-label">Mobile Number 2
                 </label>
-                <input type="password" class="form-control" id="exampleFormControlInput4" placeholder="">
+                <input type="text" class="form-control" id="exampleFormControlInput3" value="">
             </div>
 
             <div class="mb-3">
-                <label for="exampleFormControlInput5" class="form-label">Confirm Password<span
-                        class="mandatoryfield">*</span>
-                </label>
-                <input type="password" class="form-control" id="exampleFormControlInput5" placeholder="">
+                <label for="exampleFormControlInput5" class="form-label">Password</label>
+                <div class="mb-3 d-flex justify-content-between passwordfieldaccount">
+                    <input type="password" class="form-control" id="exampleFormControlInput5" value="example123">
+                    <button class="btn bluebg col-3">Reset</button>
+                </div>
+               
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput4" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput4" value="name@example.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1"
+                    rows="2">Example address, city, state - 345132</textarea>
+            </div>
+
+
+            <div class="mb-3 insightsaccount mt-4">
+
+                <div class="insightbox">
+                    <div class="count">
+                        <p class="mb-0">100</p>
+                    </div>
+                    <div class="insighttxt">
+                        <p class="mb-0">Your Orders</p>
+                    </div>
+                </div>
+
+                <div class="insightbox">
+                    <div class="count">
+                        <p class="mb-0">150</p>
+                    </div>
+                    <div class="insighttxt">
+                        <p class="mb-0">Your Cart</p>
+                    </div>
+                </div>
+
+                <div class="insightbox">
+                    <div class="count">
+                        <p class="mb-0">2</p>
+                    </div>
+                    <div class="insighttxt">
+                        <p class="mb-0">Quote Requests</p>
+                    </div>
+                </div>
+
             </div>
 
             <div class="registerloginbtn mb-2">
-                <button class="btn w-100">Register</button>
+                <button class="btn w-100">Update</button>
             </div>
 
-            <div class="signupinlink">
-                <a href="login.html">Already Have Account? Click To Sign In</a>
-            </div>
 
-            <div>
-                <span class="text-secondary small">
-                    By continuing, you agree to Skyline's Terms and Conditions and the Privacy Policy.
-                </span>
-            </div>
 
         </form>
     </div>
