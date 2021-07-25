@@ -1027,12 +1027,66 @@ hr {
 .passwordfieldaccount input {
   width: 73%;
 }
-.insightbox:hover{
- color: var(--blue);
- cursor: pointer;
+.insightbox:hover {
+  color: var(--blue);
+  cursor: pointer;
 }
 
 /* register-login user page ends */
+
+/* your cart start */
+#yourcartitems {
+  padding: 1.5rem;
+  padding-top: 0px;
+  padding-left: 0px;
+  width: 95%;
+}
+.yourcartitem {
+  display: flex;
+  width: 80%;
+  border: 1px solid rgb(230, 230, 230);
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.yourcartitemimg {
+  width: 40%;
+}
+.yourcartitemimg img {
+  width: 14rem;
+}
+.quantityincdecyourcart {
+  display: flex;
+  justify-content: start;
+}
+#deselectallitems p {
+  color: #4156a7;
+  font-size: 14px;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+#deselectallitems p:hover {
+  text-decoration: underline var(--blue);
+}
+
+#yourcartheading {
+  padding-left: 1rem;
+}
+.yourcartcontainers {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1rem;
+}
+#yourcartsubtotal {
+  width: 22%;
+  float: right;
+  padding: 1.5rem;
+  border: 1px solid rgb(230, 230, 230);
+}
+#yourcartsubtotal button{
+  font-size: 14px;
+}
+/* your cart ends */
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
@@ -1248,6 +1302,46 @@ hr {
     margin-left: 4%;
     padding: 1.2rem;
   }
+
+  /* your cart start */
+  #yourcartitems {
+    padding: 0rem;
+    padding-top: 0px;
+    padding-left: 0px;
+    width: 100%;
+  }
+  .yourcartitem {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    margin-left: 0rem;
+  }
+  .yourcartitemimg {
+    width: 42%;
+  }
+  .yourcartitemdetails{
+    width: 58%;
+  }
+  .yourcartitemimg img {
+    width: 6rem;
+  }
+  #yourcartheading {
+    display: none;
+  }
+  .yourcartcontainers {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  #yourcartsubtotal {
+    width: 100%;
+    float: none; 
+    margin-bottom: 1rem;
+  }
+  .yourcartitem .prodinfoname p {
+    font-size: 13px;
+  }
+  /* your cart ends */
 }
 
 /* iPads ----------- */
@@ -1387,7 +1481,16 @@ hr {
     min-width: 30%;
     margin-right: 0%;
   }
+
+  /* your cart */
+  .yourcartitemimg img {
+    width: 7rem;
+  }
+  .yourcartitem .prodinfoname p {
+    font-size: 13px;
+  }
 }
+
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-device-width: 1025px) {
@@ -1631,16 +1734,16 @@ hr {
   .insightbox {
     min-width: 30%;
   }
-  .youraccountform{
+  .youraccountform {
     margin-left: 20%;
     width: 60%;
   }
-  .youraccountformparts{
+  .youraccountformparts {
     display: flex;
     width: 100%;
     justify-content: space-between;
   }
-  .youraccountformpartsdiv{
+  .youraccountformpartsdiv {
     width: 45%;
   }
 }
