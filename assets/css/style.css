@@ -1592,8 +1592,7 @@ hr {
     padding: 1rem;
     margin-top: -2rem;
   }
-  #quickviewproductmodal .carousel-control-next-icon,
-  .carousel-control-prev-icon {
+  #quickviewproductmodal .prevnexticonmodal {
     background-color: black;
     border-radius: 5px;
     height: 1.5rem;
