@@ -1083,8 +1083,19 @@ hr {
   padding: 1.5rem;
   border: 1px solid rgb(230, 230, 230);
 }
-#yourcartsubtotal button{
+#yourcartsubtotal button {
   font-size: 14px;
+}
+
+.deleteitemcartlink {
+  font-size: 13px;
+  margin-left: 1rem;
+  color: var(--blue);
+  padding-top: 2px;
+}
+.deleteitemcartlink:hover{
+  text-decoration: underline var(--blue);
+  color: var(--blue);
 }
 /* your cart ends */
 
@@ -1319,7 +1330,7 @@ hr {
   .yourcartitemimg {
     width: 42%;
   }
-  .yourcartitemdetails{
+  .yourcartitemdetails {
     width: 58%;
   }
   .yourcartitemimg img {
@@ -1335,7 +1346,7 @@ hr {
   }
   #yourcartsubtotal {
     width: 100%;
-    float: none; 
+    float: none;
     margin-bottom: 1rem;
   }
   .yourcartitem .prodinfoname p {
@@ -1490,7 +1501,6 @@ hr {
     font-size: 13px;
   }
 }
-
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-device-width: 1025px) {
