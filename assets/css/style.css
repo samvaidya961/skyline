@@ -1043,7 +1043,7 @@ hr {
 }
 .yourcartitem {
   display: flex;
-  width: 80%;
+  width: 78%;
   border: 1px solid rgb(230, 230, 230);
   padding: 1rem;
   margin-left: 1rem;
@@ -1068,7 +1068,6 @@ hr {
 #deselectallitems p:hover {
   text-decoration: underline var(--blue);
 }
-
 #yourcartheading {
   padding-left: 1rem;
 }
@@ -1078,7 +1077,7 @@ hr {
   padding-left: 1rem;
 }
 #yourcartsubtotal {
-  width: 22%;
+  width: 24%;
   float: right;
   padding: 1.5rem;
   border: 1px solid rgb(230, 230, 230);
@@ -1086,16 +1085,31 @@ hr {
 #yourcartsubtotal button {
   font-size: 14px;
 }
-
 .deleteitemcartlink {
   font-size: 13px;
   margin-left: 1rem;
   color: var(--blue);
   padding-top: 2px;
 }
-.deleteitemcartlink:hover{
+.deleteitemcartlink:hover {
   text-decoration: underline var(--blue);
   color: var(--blue);
+}
+
+/* skyline protection */
+.purchaseprotectcont {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.purchaseprotectimg img {
+  height: 2.5rem;
+  margin-right: 0.4rem;
+}
+.purchaseprotecttxt p {
+  font-size: 14px;
+}
+.purchaseprotecttxt .text-danger {
+  font-size: 10.5px;
 }
 /* your cart ends */
 
@@ -1499,6 +1513,19 @@ hr {
   }
   .yourcartitem .prodinfoname p {
     font-size: 13px;
+  }
+  #yourcartsubtotal {
+    width: 32%;
+  }
+  .yourcartitem {
+    display: flex;
+    width: 70%;
+  }
+  .yourcartitemimg {
+    width: 35%;
+  }
+  .yourcartitemdetails {
+    width: 65%;
   }
 }
 
