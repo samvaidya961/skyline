@@ -1631,4 +1631,16 @@ hr {
   .insightbox {
     min-width: 30%;
   }
+  .youraccountform{
+    margin-left: 15%;
+    width: 70%;
+  }
+  .youraccountformparts{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .youraccountformpartsdiv{
+    width: 45%;
+  }
 }
