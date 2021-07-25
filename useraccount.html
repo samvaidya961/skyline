@@ -41,21 +41,284 @@
 
 <body>
 
-    <!-- header - navigation bar start-->
-    <section>
-        <nav class="navbar navbar-expand-lg navbar-dark bluebg" aria-label="Main navigation">
-            <div class="container-fluid">
+     <!-- header - navigation bar start-->
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-dark bluebg" aria-label="Main navigation">
+      <div class="container-fluid">
 
-                <!-- logo -->
-                <a id="sky-logo" class="navbar-brand mr-auto" href="index.html">
-                    <img src="assets/images/logo.png" alt="logo" height="24" class="d-inline-block align-text-top">
-                </a>
-                <!-- logo end -->
+        <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mob-sidebar" aria-controls="mob-sidebar">
+          <span id="sb-toggle" class="navbar-toggler-icon"></span>
+        </button>
 
+        <!-- logo -->
+        <a id="sky-logo" class="navbar-brand mr-auto" href="index.html">
+          <img src="assets/images/logo.png" alt="logo" height="24" class="d-inline-block align-text-top">
+        </a>
+        <!-- logo end -->
+
+        <!-- bulk quote -->
+        <button id="bulkquote" class="btn btn-success btn-sm">
+          BULK QUOTE
+        </button>
+        <!-- bulk quote end -->
+
+        <!-- location select mobile start -->
+        <a id="selectlocicon" href="" data-bs-toggle="offcanvas" data-bs-target="#locationoffcanvas"
+          aria-controls="locationoffcanvas">
+          <span class="material-icons">
+            location_on
+          </span>
+        </a>
+        <!-- location select mobile end -->
+
+
+        <!-- mobile cart start-->
+        <div id="mob-cart">
+          <div id="shoppingcart-mob" class="d-flex">
+            <div id="cartimg">
+              <span class="material-icons">
+                shopping_cart
+              </span>
             </div>
-        </nav>
-    </section>
-    <!-- header - navigation bar end -->
+            <div id="cartcount" class="badge rounded-pill bg-grey">
+              43
+            </div>
+          </div>
+        </div>
+
+        <!-- mobile cart end -->
+
+        <!-- searchbar -->
+        <div class="input-group searchbargrp">
+          <input type="text" class="form-control" placeholder="Search For Products And Categories"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button id="sbarbtn" class="btn" type="button" id="button-addon2">
+            <span class="material-icons">
+              search
+            </span>
+          </button>
+        </div>
+        <!-- searchbar end -->
+
+        <!-- navbar items in desktop -->
+        <div id="desknavitems" class="navbar-collapse offcanvas-collapse">
+
+
+          <!-- lang -->
+          <div id="langchange" class="dropdown">
+            <a class="text-light dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              En
+            </a>
+            <ul id="langchangeitems" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li><button class="dropdown-item" type="button">Marathi</button></li>
+              <li><button class="dropdown-item" type="button">Japanese</button></li>
+              <li><button class="dropdown-item" type="button">German</button></li>
+            </ul>
+          </div>
+          <!-- lang end -->
+
+          <!-- account and orders dropdown -->
+          <div class="dropdown accountordersdropd">
+            <a class="dropdown-toggle accountordersdropd-inner" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span>Hello, User</span> <br><strong class="acntordersspan">Account & Orders</strong>
+            </a>
+            <div id="acountordersdiv" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <p><strong>Your Account</strong></p>
+
+              <button id="signoutbtn" class="w-100 btn">Sign Out</button>
+
+              <div id="youracntitemlist">
+                <a href="">Your Account</a>
+                <a href="">Your Orders</a>
+                <a href="">Your Cart</a>
+                <a href="">Your Wishlist</a>
+                <a href="">Your Recommendation</a>
+                <a href="">Bulk Quote</a>
+              </div>
+            </div>
+          </div>
+          <!-- account and orders dropdown end-->
+
+
+          <!-- select location start -->
+          <a id="locationselect" data-bs-toggle="offcanvas" data-bs-target="#locationoffcanvas"
+            aria-controls="locationoffcanvas" class="accountordersdropd-inner d-flex">
+            <p class="mb-0" id="locicon">
+              <span class="material-icons">
+                location_on
+              </span>
+            </p>
+            <p class="mb-0">
+              <span>Hello</span>
+              <br>
+              <strong class="acntordersspan">
+                Select Your Address</strong>
+            </p>
+
+          </a>
+          <!-- select location end -->
+
+
+          <!-- cart start desktop-->
+          <div id="shoppingcart">
+            <div id="cartimg">
+              <img src="assets/images/shopping-cart.png" alt="">
+            </div>
+            <div id="cartcount" class="badge rounded-pill bg-grey">
+              434
+            </div>
+          </div>
+          <!-- cart end -->
+        </div>
+
+        <!-- desktop nav items end -->
+
+      </div>
+    </nav>
+
+
+    <!-- sidebar in mobile start -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mob-sidebar" aria-labelledby="mob-sidebarLabel">
+
+      <!-- sidebar header -->
+      <div id="mobsidebarheader">
+        <a class="float-end" data-bs-dismiss="offcanvas" aria-label="Close">
+          <span class="material-icons">
+            close
+          </span>
+        </a>
+        <div id="mobsidebarusername">
+          <p><em>Hello, User</em></p>
+        </div>
+      </div>
+      <!-- sidebar header end -->
+
+
+      <!-- sidebar links start -->
+      <div id="mobsidebaritems">
+
+        <div onclick="location.href=''" class="mobsidebaritem">
+          <a href="">Home</a>
+          <span class="material-icons">
+            navigate_next
+          </span>
+        </div>
+
+        <div onclick="location.href=''" class="mobsidebaritem">
+          <a href="">Shop By Category</a>
+          <span class="material-icons">
+            navigate_next
+          </span>
+        </div>
+
+        <div onclick="location.href=''" class="mobsidebaritem">
+          <a href="">Top Picks For You</a>
+          <span class="material-icons">
+            navigate_next
+          </span>
+        </div>
+
+        <div onclick="location.href=''" class="mobsidebaritem">
+          <a href="">Available Brands</a>
+          <span class="material-icons">
+            navigate_next
+          </span>
+        </div>
+
+        <div onclick="location.href=''" class="mobsidebaritem">
+          <a href="">Your Orders</a>
+          <span class="material-icons">
+            navigate_next
+          </span>
+        </div>
+
+        <div onclick="location.href=''" class="mobsidebaritem">
+          <a href="">Your Cart</a>
+          <span class="material-icons">
+            navigate_next
+          </span>
+        </div>
+
+        <div onclick="location.href=''" class="mobsidebaritem">
+          <a href="">Your Wishlist</a>
+          <span class="material-icons">
+            navigate_next
+          </span>
+        </div>
+
+        <div onclick="location.href=''" class="mobsidebaritem">
+          <a href="">Bulk Quote</a>
+          <span class="material-icons">
+            navigate_next
+          </span>
+        </div>
+
+        <div onclick="location.href=''" class="mobsidebaritem">
+          <a href="">Contact Us</a>
+          <span class="material-icons">
+            navigate_next
+          </span>
+        </div>
+
+        <div onclick="location.href=''" class="mobsidebaritem">
+          <a href="">Switch Account</a>
+          <span class="material-icons">
+            navigate_next
+          </span>
+        </div>
+
+        <div onclick="location.href=''" class="mobsidebaritem mb-0">
+          <a href="">Logout</a>
+
+        </div>
+
+      </div>
+      <!-- sidebar links end -->
+
+    </div>
+    <!-- sidebar in mobile end -->
+
+
+
+    <!-- location offcanvas -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="locationoffcanvas"
+      aria-labelledby="locationoffcanvasLabel">
+
+      <div class="offcanvas-body small">
+        <h6><strong>Choose Your Location</strong></h6>
+        <span class="text-secondary">Select a delivery location to see product availability and delivery options</span>
+
+        <div id="defaultaddress">
+          <span id="defname"><strong> User -</strong></span>
+          <span id="defcity"><strong>AURANGABAD -</strong> </span>
+          <span id="defpin">431009</span>
+          <p class="text-secondary mb-0">
+            <strong>
+              Current Address
+            </strong>
+          </p>
+        </div>
+
+        <a href="" class="text-primary"><small>Change or edit address</small></a>
+        <hr>
+
+        <div class="input-group mt-3 mb-3">
+          <input type="text" class="form-control" placeholder="Enter Your Pincode" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+          <button class="btn btn-secondary" type="button" id="button-addon2">
+            Check
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- location offcanvas end-->
+
+  </section>
+  <!-- header - navigation bar end -->
+
 
     <!-- breadcrumb start -->
     <nav id="breadcrumbproductinfo" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -115,20 +378,21 @@
                 <div class="youraccountformpartsdiv">
                     <div class="mb-3">
                         <label for="exampleFormControlInput6" class="form-label">Address</label>
-                        <input type="email" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
+                        <input type="text" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
                             placeholder="Pincode">
 
-                        <input type="email" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
-                            placeholder="Flat, House no, Building, Company, Apartment">
+                        <input type="text" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
+                            placeholder="Town/City">
 
-                        <input type="email" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
+                        <input type="text" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
                             placeholder="Area, Colony, Street, Sector, Village">
 
-                        <input type="email" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
+                        <input type="text" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
+                            placeholder="Flat, House no, Building, Company, Apartment">
+
+                        <input type="text" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
                             placeholder="Landmark eg. near Max Hospital">
 
-                        <input type="email" class="form-control mb-2 mb-lg-3" id="exampleFormControlInput4"
-                            placeholder="Town/City">
 
                     </div>
 
