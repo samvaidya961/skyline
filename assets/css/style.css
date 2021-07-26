@@ -1393,6 +1393,9 @@ hr {
   .yourordersdelivereddate{
     font-size: 13px;
   }
+  .yourordersitemheaderitem1{
+    padding-right: 1rem;
+  }
 }
 
 /* iPads ----------- */
