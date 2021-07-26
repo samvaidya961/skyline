@@ -36,7 +36,7 @@
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
 
-    <title>Your Cart</title>
+    <title>Your Orders</title>
 </head>
 
 <body>
@@ -325,7 +325,7 @@
     <nav id="breadcrumbproductinfo" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Your Cart</li>
+            <li class="breadcrumb-item active" aria-current="page">Your Orders</li>
 
         </ol>
     </nav>
@@ -333,124 +333,162 @@
 
 
     <section>
-        <!-- shopping cart start -->
+        <!-- your orders start -->
 
         <div id="yourcartheading">
             <div class="siteheading">
                 <h6>
-                    Shopping Cart
+                    Your Orders
                 </h6>
             </div>
             <div class="headingunderline"></div>
-            <a id="deselectallitems" href="">
-                <p class="mb-0">Deselect All Items</p>
-            </a>
         </div>
 
-
-        <div class="yourcartcontainers">
-            <div id="yourcartsubtotal">
-
-                <div class="purchaseprotectcont">
-                    <div class="purchaseprotectimg">
-                        <img src="assets/images/skyline-protect.png" alt="">
+        <div id="yourorderscont">
+            <div class="yourordersitem">
+                <div class="yourordersitemheader">
+                    <div class="yourordersitemheaderitem">
+                        <p class="mb-0">ORDER PLACED</p>
+                        <p class="mb-0">12 July 2021</p>
                     </div>
-                    <div class="purchaseprotecttxt">
-                        <p class="mb-0">100% Purchase Protection</p>
-                        <p class="mb-0 text-danger">Original Products | Secure Payments</p>
+
+                    <div class="yourordersitemheaderitem">
+                        <p class="mb-0">TOTAL</p>
+                        <p class="mb-0">₹1,608.00</p>
                     </div>
+
+                    <div class="yourordersitemheaderitem">
+                        <p class="mb-0">SHIP TO</p>
+                        <p class="mb-0 text-primary">User Name</p>
+                    </div>
+
+                    <div class="yourordersitemheaderitem1">
+                        <a href="" class="mb-0 text-primary">View order details</a>
+                    </div>
+
+                    <div class="yourordersitemheaderitem1">
+                        <a href="" class="mb-0 text-primary invoicedownloadlink">
+                            <span id="invoicedownloadicon" class="material-icons d-block">
+                                file_download
+                            </span>
+                            <span class="d-block">
+                                Invoice
+                            </span>
+                        </a>
+                    </div>
+
                 </div>
+                <div class="yourordersitembody">
+                    <div id="yourordersitembody1">
+                        <p><strong>Delivered 14-Jul-2021</strong></p>
 
-                <div class="yourcartsubtotalhead">
-                    <p>Subtotal (2 Items )
-                        <strong>₹260</strong>
-                    </p>
-                </div>
-                <p class="text-success small">Your order is eligible for FREE Delivery.</p>
-                <button class="btn bg-orange w-100">Proceed To Buy</button>
-            </div>
+                        <div class="yourordersproduct">
+                            <div class="yourordersproductimg">
+                                <img src="assets/images/category1.png" alt="">
+                            </div>
 
-            <div id="yourcartitems">
+                            <div class="yourordersproductinfo">
+                                <p class="mb-2">Finolex 1.5 SQMM SINGLE CORE PVC INS. COPPER FLEXIBLE FRLS CBL YEL/GRN
+                                    AS PER IS 694</p>
+                                <button class="btn bluebg mb-3">Buy Again</button>
+                            </div>
+                        </div>
 
-                <div class="yourcartitem">
-                    <div class="yourcartitemimg">
-                        <img src="assets/images/category1.png" alt="">
+                        <div class="yourordersproduct">
+                            <div class="yourordersproductimg">
+                                <img src="assets/images/category3.png" alt="">
+                            </div>
+
+                            <div class="yourordersproductinfo">
+                                <p class="mb-2">Finolex 1.5 SQMM SINGLE CORE PVC INS. COPPER FLEXIBLE FRLS CBL YEL/GRN
+                                    AS PER IS 694</p>
+                                <button class="btn bluebg mb-3">Buy Again</button>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="yourcartitemdetails">
-                        <div class="prodinfoname">
-                            <p>Finolex 1.5 SQMM SINGLE CORE PVC INS. COPPER FLEXIBLE FRLS CBL YEL/GRN AS PER IS 694</p>
-                        </div>
 
-                        <div id="verifiedbadge" class="mb-2">
-                            <p class="mb-0">Skyline <span id="verifiedtxt">Verified</span><span class="material-icons">
-                                    verified_user
-                                </span> </p>
-                        </div>
-
-
-                        <div class="prodpricees">
-                            <p class="mb-1">MRP: <s><strong> ₹150.5</strong></s></p>
-                            <p class="mb-1">Price: <span class="text-success"><strong> ₹130</strong></span></p>
-                            <p class="mb-1">FREE Delivery: <strong class="text-dark">July 20 - 24</strong></p>
-                        </div>
-
-
-                        <div class="prodmoredetails">
-                            <p class="mb-2 text-success small">In Stock.</p>
-                           
-                        </div>
-
-                        <div class="quantityincdec quantityincdecyourcart">
-                            <form>
-                                <button type="button">-</button>
-                                <input type="text" id="number" value="2" />
-                                <button type="button">+</button>
-                            </form>
-                            <a class="deleteitemcartlink" href="">Delete</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="yourcartitem">
-                    <div class="yourcartitemimg">
-                        <img src="assets/images/category3.png" alt="">
-                    </div>
-                    <div class="yourcartitemdetails">
-                        <div class="prodinfoname">
-                            <p>Finolex 1.5 SQMM SINGLE CORE PVC INS. COPPER FLEXIBLE FRLS CBL YEL/GRN AS PER IS 694</p>
-                        </div>
-
-                        <div id="verifiedbadge" class="mb-2">
-                            <p class="mb-0">Skyline <span id="verifiedtxt">Verified</span><span class="material-icons">
-                                    verified_user
-                                </span> </p>
-                        </div>
-
-
-                        <div class="prodpricees">
-                            <p class="mb-1">MRP: <s><strong> ₹150.5</strong></s></p>
-                            <p class="mb-1">Price: <span class="text-success"><strong> ₹130</strong></span></p>
-                            <p class="mb-1">FREE Delivery: <strong class="text-dark">July 20 - 24</strong></p>
-                        </div>
-
-
-                        <div class="prodmoredetails">
-                            <p class="mb-2 text-danger small">Out Of Stock.</p>
-                        </div>
-
-                        <div class="quantityincdec quantityincdecyourcart">
-                            <form>
-                                <button type="button">-</button>
-                                <input type="text" id="number" value="2" />
-                                <button type="button">+</button>
-                            </form>
-                            <a class="deleteitemcartlink" href="">Delete</a>
-                        </div>
+                    <div id="yourordersitembody2">
+                        <button class="btn bg-orange mb-3">Track Package</button>
+                        <button class="btn btn-outline-danger mb-3">Cancel Items</button>
                     </div>
                 </div>
             </div>
+
+            <div class="yourordersitem">
+                <div class="yourordersitemheader">
+                    <div class="yourordersitemheaderitem">
+                        <p class="mb-0">ORDER PLACED</p>
+                        <p class="mb-0">12 July 2021</p>
+                    </div>
+
+                    <div class="yourordersitemheaderitem">
+                        <p class="mb-0">TOTAL</p>
+                        <p class="mb-0">₹1,608.00</p>
+                    </div>
+
+                    <div class="yourordersitemheaderitem">
+                        <p class="mb-0">SHIP TO</p>
+                        <p class="mb-0 text-primary">User Name</p>
+                    </div>
+
+                    <div class="yourordersitemheaderitem1">
+                        <a href="" class="mb-0 text-primary">View order details</a>
+                    </div>
+
+                    <div class="yourordersitemheaderitem1">
+                        <a href="" class="mb-0 text-primary invoicedownloadlink">
+                            <span id="invoicedownloadicon" class="material-icons d-block">
+                                file_download
+                            </span>
+                            <span class="d-block">
+                                Invoice
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="yourordersitembody">
+                    <div id="yourordersitembody1">
+                        <p><strong>Delivered 14-Jul-2021</strong></p>
+
+                        <div class="yourordersproduct">
+                            <div class="yourordersproductimg">
+                                <img src="assets/images/category1.png" alt="">
+                            </div>
+
+                            <div class="yourordersproductinfo">
+                                <p class="mb-2">Finolex 1.5 SQMM SINGLE CORE PVC INS. COPPER FLEXIBLE FRLS CBL YEL/GRN
+                                    AS PER IS 694</p>
+                                <button class="btn bluebg mb-3">Buy Again</button>
+                            </div>
+                        </div>
+
+                        <div class="yourordersproduct">
+                            <div class="yourordersproductimg">
+                                <img src="assets/images/category3.png" alt="">
+                            </div>
+
+                            <div class="yourordersproductinfo">
+                                <p class="mb-2">Finolex 1.5 SQMM SINGLE CORE PVC INS. COPPER FLEXIBLE FRLS CBL YEL/GRN
+                                    AS PER IS 694</p>
+                                <button class="btn bluebg mb-3">Buy Again</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="yourordersitembody2">
+                        <button class="btn bg-orange mb-3">Track Package</button>
+                        <button class="btn btn-outline-danger mb-3">Cancel Items</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- shopping cart end -->
+
+
+
+        <!-- your orders end -->
     </section>
 
     <!--site footer start-->
