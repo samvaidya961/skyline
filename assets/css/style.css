@@ -1353,6 +1353,7 @@ hr {
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
+    font-size: 12px;
   }
   .yourordersitemheaderitem {
     margin-right: 1.5rem;
@@ -1381,7 +1382,9 @@ hr {
     justify-content: space-between;
   }
   #yourordersitembody2 button {
-    width: 48%;
+    width: 47%;
+    font-size: 13px;
+    padding: 4px 1rem;
   }
   .yourordersprodname{
     overflow: hidden;
