@@ -1131,6 +1131,9 @@ hr {
 #contactusform form {
   padding: 0rem 3rem 1.2rem 1.2rem;
 }
+#contactusform label{
+  font-size: 14px;
+}
 .contactnos {
   font-size: 14px;
 }
