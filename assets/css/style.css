@@ -1119,7 +1119,7 @@ hr {
 }
 .yourordersitem {
   border: 1px solid lightgrey;
-  width: 70%;
+  width: 80%;
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
@@ -1158,10 +1158,10 @@ hr {
 .yourordersproduct {
   display: flex;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .yourordersproductimg {
-  width: 25%;
+  width: 23%;
 }
 .yourordersproductimg img {
   height: 6rem;
@@ -1169,6 +1169,11 @@ hr {
 .yourordersproductinfo {
   font-size: 14px;
   padding-right: 2rem;
+  width: 70%;
+}
+.yourordersproductinfo button{
+font-size: 13px;
+padding: 3px 1rem;
 }
 /* your orders end */
 
