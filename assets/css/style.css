@@ -1030,10 +1030,11 @@ hr {
 /* your orders start */
 #yourorderscont {
   padding: 1rem;
+  padding-top: 0rem;
 }
 .yourordersitem {
   border: 1px solid lightgrey;
-  width: 70%;
+  width: 75%;
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
@@ -1086,6 +1087,26 @@ hr {
   font-size: 13px;
   padding: 3px 1rem;
 }
+
+/* assistant help */
+#assistanthelpsection {
+  float: right;
+}
+.assistanthelpitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 1.5rem;
+  padding-top: 0rem;
+  padding: 2rem;
+  border: 1px solid lightgrey;
+  background-color: rgb(250, 250, 250);
+}
+.assistanthelpitem img {
+  height: 10rem;
+  margin-bottom: 2rem;
+}
+
 /* your orders end */
 
 /* Smartphones ----------- */
@@ -1386,15 +1407,18 @@ hr {
     font-size: 13px;
     padding: 4px 1rem;
   }
-  .yourordersprodname{
+  .yourordersprodname {
     overflow: hidden;
     white-space: nowrap;
   }
-  .yourordersdelivereddate{
+  .yourordersdelivereddate {
     font-size: 13px;
   }
-  .yourordersitemheaderitem1{
+  .yourordersitemheaderitem1 {
     padding-right: 1rem;
+  }
+  #assistanthelpsection {
+    display: none;
   }
 }
 
@@ -1562,6 +1586,10 @@ hr {
     margin-left: 0rem;
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  #assistanthelpsection {
+    display: none;
   }
 }
 
