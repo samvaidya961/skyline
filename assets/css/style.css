@@ -1834,17 +1834,19 @@ hr {
     float: right;
   }
   .assistanthelpitem {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-right: 1.5rem;
     padding-top: 0rem;
     padding: 2rem;
     border: 1px solid lightgrey;
     background-color: rgb(250, 250, 250);
+    text-align: center;
   }
   .assistanthelpitem img {
-    height: 9rem;
+    height: 150px;
+  }
+  #assistanthelpimg {
     margin-bottom: 2rem;
+    height: 120px;
+    width: 120px;
   }
 }
