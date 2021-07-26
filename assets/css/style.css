@@ -345,7 +345,7 @@ a:hover {
 
 .nav-scroller {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   height: auto;
   overflow-y: hidden;
 }
@@ -1209,6 +1209,7 @@ hr {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     font-size: 14px;
+    z-index: 0;
   }
   /* product more details */
   .moreproductdetails {
