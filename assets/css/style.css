@@ -1112,6 +1112,50 @@ hr {
 }
 /* bulk quote form ends */
 
+/* contact us page start */
+#contactusinfocont {
+  display: flex;
+  width: 100%;
+  padding: 1.5rem;
+  padding-left: 1rem;
+}
+#contactusinfo {
+  width: 50%;
+}
+.contactinfoinner {
+  padding-left: 1rem;
+}
+#contactusform {
+  width: 50%;
+}
+#contactusform form {
+  padding: 0rem 3rem 1.2rem 1.2rem;
+}
+.contactnos {
+  font-size: 14px;
+}
+#contactusinfocont span {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 0.5rem;
+}
+#contactusinfocont .material-icons {
+  color: var(--blue);
+}
+.contactnos p {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.contactaddress p {
+  display: flex;
+  width: 70%;
+}
+.contactaddress .material-icons {
+  margin-top: 4px;
+}
+/* contact us page ends */
+
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
@@ -1445,6 +1489,30 @@ hr {
     font-size: 14px;
   }
   /* bulk quote form ends */
+
+  /* contact us page start */
+  #contactusinfocont {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+    padding-left: 0.3rem;
+  }
+  #contactusinfo {
+    width: 100%;
+    margin-bottom: 0.8rem;
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid rgb(211, 211, 211);
+  }
+  #contactusform {
+    width: 100%;
+  }
+  .contactaddress p {
+    width: 100%;
+  }
+  #contactusform form {
+    padding: 1.2rem;
+  }
+  /* contact us page ends */
 }
 
 /* iPads ----------- */
@@ -1624,6 +1692,12 @@ hr {
   }
   #bulkquoteform button {
     font-size: 14px;
+  }
+
+  /* contact us */
+  #contactusform form {
+    padding: 1.2rem;
+    padding-top: 0rem;
   }
 }
 
