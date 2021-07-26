@@ -1390,6 +1390,9 @@ hr {
     overflow: hidden;
     white-space: nowrap;
   }
+  .yourordersdelivereddate{
+    font-size: 13px;
+  }
 }
 
 /* iPads ----------- */
