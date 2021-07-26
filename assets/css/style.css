@@ -1088,25 +1088,6 @@ hr {
   padding: 3px 1rem;
 }
 
-/* assistant help */
-#assistanthelpsection {
-  float: right;
-}
-.assistanthelpitem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 1.5rem;
-  padding-top: 0rem;
-  padding: 2rem;
-  border: 1px solid lightgrey;
-  background-color: rgb(250, 250, 250);
-}
-.assistanthelpitem img {
-  height: 10rem;
-  margin-bottom: 2rem;
-}
-
 /* your orders end */
 
 /* Smartphones ----------- */
@@ -1846,5 +1827,24 @@ hr {
   }
   .youraccountformpartsdiv {
     width: 45%;
+  }
+
+  /* assistant help */
+  #assistanthelpsection {
+    float: right;
+  }
+  .assistanthelpitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1.5rem;
+    padding-top: 0rem;
+    padding: 2rem;
+    border: 1px solid lightgrey;
+    background-color: rgb(250, 250, 250);
+  }
+  .assistanthelpitem img {
+    height: 9rem;
+    margin-bottom: 2rem;
   }
 }
