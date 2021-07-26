@@ -1214,6 +1214,9 @@ hr {
   .checkpincodeprodinfo button{
     font-size: 14px;
   }
+  .checkpincodeprodinfo input::placeholder{
+    font-size: 14px;
+  }
   /* product more details */
   .moreproductdetails {
     margin-left: 0%;
