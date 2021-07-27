@@ -1,4 +1,14 @@
-// zoom image
+// sidebar
+document.addEventListener("DOMContentLoaded", function () {
+    var myOffcanvas = document.getElementById('mob-sidebar');
+    var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
+    document.getElementById("sbtoggle").addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        bsOffcanvas.toggle();
+    });
+});
+
 
 // toggle text see more see less
 const btn = document.getElementById("seemorelessbtn");
@@ -10,8 +20,9 @@ btn.addEventListener("click", () => {
     }
 });
 
+
 // main picture
-  var picture = document.querySelector('#pic');
+var picture = document.querySelector('#pic');
 
 // side pictures
 var picture1 = document.querySelector('#pic1');
