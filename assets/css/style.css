@@ -1131,13 +1131,13 @@ hr {
 #contactusform form {
   padding: 0rem 3rem 1.2rem 1.2rem;
 }
-#contactusform label{
+#contactusform label {
   font-size: 14px;
 }
 .contactnos {
   font-size: 14px;
 }
-.contactnos svg{
+.contactnos svg {
   color: var(--blue);
   margin-right: 0.5rem;
   font-size: 12px;
@@ -1163,6 +1163,54 @@ hr {
   margin-top: 4px;
 }
 /* contact us page ends */
+
+/* about us page starts */
+#aboutuscont {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  text-align: justify;
+  width: 98%;
+  margin-left: 1%;
+  box-shadow: 2px 2px 10px lightgrey;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.aboutustext {
+  padding-bottom: 1rem;
+}
+#visionmission {
+  margin-top: 2.5rem;
+  display: flex;
+}
+.vision {
+  padding-right: 2rem;
+}
+.mission {
+  padding-left: 2rem;
+}
+
+.locationsservecont {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.locationsserveitem {
+  padding: 1rem;
+  padding-bottom: 0rem;
+  width: 31%;
+  box-shadow: 2px 2px 10px lightgrey;
+  margin: 1%;
+  border-radius: 5px;
+  border-bottom: 3px solid var(--orange);
+}
+.locationsserveitem h5 {
+  font-size: 14px;
+  font-weight: 550;
+}
+/* about us page ends */
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
@@ -1521,6 +1569,35 @@ hr {
     padding: 1.2rem;
   }
   /* contact us page ends */
+
+  /* about us page starts */
+  #aboutuscont {
+    padding: 1rem;
+    width: 96%;
+    margin-left: 2%;
+  }
+  #visionmission {
+    display: flex;
+    flex-direction: column;
+  }
+  .vision h5 {
+    font-weight: 550;
+  }
+  .mission h5 {
+    font-weight: 550;
+  }
+  .vision {
+    padding-right: 0rem;
+  }
+  .mission {
+    margin-top: 1rem;
+    padding-left: 0rem;
+  }
+  .locationsserveitem {
+    width: 90%;
+  }
+ 
+  /* about us page ends */
 }
 
 /* iPads ----------- */
