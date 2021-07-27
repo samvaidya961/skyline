@@ -10,6 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// filter sidebar
+function myFunction() {
+    var x = document.getElementById("filtersidebarbody");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+
 // toggle text see more see less
 const btn = document.getElementById("seemorelessbtn");
 btn.addEventListener("click", () => {
