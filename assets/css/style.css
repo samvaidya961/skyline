@@ -1213,6 +1213,47 @@ hr {
 }
 /* about us page ends */
 
+/* category vise products start */
+#filterproductssection {
+  display: flex;
+}
+#filtersidebarbody {
+  font-size: 14px;
+}
+#filtersidebarbody select {
+  font-size: 14px;
+}
+#filtersidebarbody {
+  width: 20%;
+  padding: 1.5rem;
+  box-shadow: 2px 2px 10px lightgrey;
+}
+#filteredproducts {
+  width: 78%;
+  margin-left: 2%;
+}
+#filtersidebarbody button {
+  font-size: 14px;
+}
+#filtersidebarbody button:hover {
+  color: #ebebeb;
+}
+.minmaxprice {
+  justify-content: space-between;
+  align-items: center;
+}
+.minmaxprice input {
+  width: 48%;
+}
+.minmaxprice input::placeholder {
+  font-size: 14px;
+}
+#filterbtntoggle {
+  display: none;
+}
+
+/* category vise products ends */
+
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   .offcanvas-collapse {
@@ -1597,8 +1638,33 @@ hr {
   .locationsserveitem {
     width: 90%;
   }
- 
   /* about us page ends */
+
+  /* category vise products */
+  #filtersidebarbody {
+    display: none;
+    width: 100%;
+  }
+  #filteredproducts {
+    width: 100%;
+    margin-left: 0rem;
+  }
+  #filterproductssection {
+    display: flex;
+    flex-direction: column;
+  }
+  #filterbtntoggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+    width: 100%;
+    font-size: 14px;
+    box-shadow: 1px 1px 4px rgb(228, 228, 228);
+  }
+  #filterbtntoggle .material-icons{
+    font-size: 16px;
+  }
 }
 
 /* iPads ----------- */
@@ -1784,6 +1850,19 @@ hr {
   #contactusform form {
     padding: 1.2rem;
     padding-top: 0rem;
+  }
+
+  /* category vise products */
+  #filtersidebarbody {
+    width: 30%;
+  }
+  #filteredproducts {
+    width: 68%;
+    margin-left: 2%;
+  }
+  #filteredproducts .procard {
+    width: 29%;
+    margin: 2%;
   }
 }
 
