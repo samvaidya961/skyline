@@ -1137,6 +1137,11 @@ hr {
 .contactnos {
   font-size: 14px;
 }
+.contactnos svg{
+  color: var(--blue);
+  margin-right: 0.5rem;
+  font-size: 12px;
+}
 #contactusinfocont span {
   display: inline-block;
   font-size: 14px;
