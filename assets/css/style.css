@@ -467,6 +467,7 @@ a:hover {
   display: inline-block;
   margin-right: 0.8rem;
   margin-left: 0.2rem;
+  margin-top: 0.5rem;
 }
 
 /* products category vise in the tabs */
@@ -479,6 +480,7 @@ a:hover {
 }
 .productscategorytabcont .procard {
   margin: 1%;
+  margin-top: 0.8rem;
 }
 .productscategorytabcont .discount {
   width: 3.5rem;
@@ -493,18 +495,19 @@ a:hover {
 }
 #tabcategory .nav-item {
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 0.7rem;
+  margin-left: 0.3rem;
 }
 .categorytabhead {
   color: #151515;
-  font-size: 14px;
+  font-size: 13px;
 }
 #catvisetabs .nav {
   flex-wrap: nowrap;
 }
 #tabcategory .active {
-  color: white;
-  background-color: var(--blue);
+  color: var(--blue);
+  border: 1px solid var(--blue);
   font-weight: 600;
 }
 
@@ -1279,7 +1282,17 @@ hr {
 #filterbtntoggle {
   display: none;
 }
-
+#filtersortoptions{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+#filtersortoptions select{
+  width: 50%;
+  font-size: 13.5px;
+  border: none;
+  
+}
 /* category vise products ends */
 
 /* Smartphones ----------- */
@@ -1340,6 +1353,7 @@ hr {
   .productscategorytabcont .procard {
     margin: 2%;
     width: 46%;
+    margin-top: 0.6rem;
   }
 
   /* shop by brands */
@@ -1686,9 +1700,8 @@ hr {
     justify-content: center;
     align-items: center;
     margin-top: 0rem;
-    width: 40%;
-    margin-left: 55%;
-    font-size: 14px;
+    font-size: 13.5px;
+    width: 50%;
   }
   #filterbtntoggle .material-icons {
     font-size: 16px;
@@ -1735,6 +1748,7 @@ hr {
   .productscategorytabcont .procard {
     margin: 1;
     width: 23%;
+    margin-top: 0.6rem;
   }
 
   /* shop by brands */
@@ -1900,6 +1914,20 @@ hr {
   .ourclientsimage {
     width: 20%;
     margin: 2%;
+  }
+
+   /* filter sort */
+   #filtersortoptions{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+  }
+  #filtersortoptions select{
+    width: auto;
+    font-size: 14px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid var(--blue);
   }
 }
 
@@ -2185,5 +2213,19 @@ hr {
   .ourclientsimage {
     width: 16%;
     margin: 1.5%;
+  }
+
+  /* filter sort */
+  #filtersortoptions{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+  }
+  #filtersortoptions select{
+    width: auto;
+    font-size: 14px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid var(--blue);
   }
 }
