@@ -33,7 +33,7 @@ a:hover {
 .b-example-divider {
   height: 0.3rem;
   border-width: 1px 0;
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 /* all site heading */
 .siteheading {
@@ -384,7 +384,6 @@ a:hover {
 #carindicators {
   z-index: 1;
 }
-
 
 /* products slider for top picks  */
 .productscont {
@@ -1283,18 +1282,21 @@ hr {
 #filterbtntoggle {
   display: none;
 }
-#filtersortoptions{
+#filtersortoptions {
   display: flex;
   justify-content: space-between;
   padding-right: 1rem;
 }
-#filtersortoptions select{
+#filtersortoptions select {
   width: 50%;
   font-size: 13.5px;
   border: none;
-  
 }
 /* category vise products ends */
+/* pagination */
+#productspagination {
+  padding: 1rem;
+}
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
@@ -1707,6 +1709,14 @@ hr {
   #filterbtntoggle .material-icons {
     font-size: 16px;
   }
+
+  /* pagination */
+  #productspagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* iPads ----------- */
@@ -1917,13 +1927,13 @@ hr {
     margin: 2%;
   }
 
-   /* filter sort */
-   #filtersortoptions{
+  /* filter sort */
+  #filtersortoptions {
     display: flex;
     justify-content: flex-end;
     padding-right: 2rem;
   }
-  #filtersortoptions select{
+  #filtersortoptions select {
     width: auto;
     font-size: 14px;
     border: none;
@@ -2217,16 +2227,24 @@ hr {
   }
 
   /* filter sort */
-  #filtersortoptions{
+  #filtersortoptions {
     display: flex;
     justify-content: flex-end;
     padding-right: 2rem;
   }
-  #filtersortoptions select{
+  #filtersortoptions select {
     width: auto;
     font-size: 14px;
     border: none;
     border-radius: 0px;
     border-bottom: 1px solid var(--blue);
   }
+
+  /* pagination */
+#productspagination {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
 }
