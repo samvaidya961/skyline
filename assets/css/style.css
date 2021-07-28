@@ -1307,16 +1307,18 @@ hr {
   right: 10px;
   bottom: 15px;
   z-index: 99999;
-  height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
   font-size: 0.8rem;
   margin-right: 0rem;
   box-shadow: 1px 1px 5px lightgrey;
+  background-color: var(--orange);
+  padding: 0.3rem;
 }
-
+.back-to-top img{
+  height: 2rem;
+}
 .back-to-top:hover {
-  background: var(--orange);
   color: #fff;
 }
 
@@ -1743,6 +1745,14 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  /* bulk quote */
+  .back-to-top img{
+    height: 1.7rem;
+  }
+  .back-to-top button{
+    font-size: 14px;
   }
 }
 
