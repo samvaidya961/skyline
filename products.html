@@ -431,14 +431,26 @@
     </nav>
     <!-- breadcrumb ends -->
 
-    <button id="filterbtntoggle" class="btn" onclick="myFunction()">
-        <span class="material-icons">
-            filter_alt
+
+    <div id="filtersortoptions">
+        <button id="filterbtntoggle" class="btn" onclick="myFunction()">
+            <span class="material-icons">
+                filter_alt
+                </span>
+            <span>
+                Filter Products
             </span>
-        <span>
-            Filter Products
-        </span>
-    </button>
+        </button>
+    
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Sort By Price : Low</option>
+            <option value="1">Sort By Price : High</option>
+            <option value="2">Sort By Discount</option>
+            <option value="3">Sort By Latest</option>
+          </select>
+    
+    </div>
+  
 
     <!-- filter sidebar starts -->
     <div id="filterproductssection">
