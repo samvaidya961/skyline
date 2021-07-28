@@ -978,9 +978,11 @@ hr {
   width: 78%;
 }
 .inputforgetotpbtn {
+  padding-left: 1rem;
   width: 25%;
   text-align: right;
 }
+.inputforgetotpbtn button{width: 100%;}
 
 /* register-login user page ends */
 
@@ -1582,11 +1584,12 @@ hr {
     padding: 1.2rem;
   }
   .inputforgetotpip{
-    width: 70%;
+    width: 66%;
   }
   .inputforgetotpbtn{
-    width: 30%;
-    text-align: right;
+    width: 34%;
+    font-size: 12.5px;
+    padding-left: 0.6rem;
   }
 
   /* your cart start */
@@ -1918,6 +1921,13 @@ hr {
     width: 50%;
     margin-left: 25%;
     padding: 2rem;
+  }
+  .inputforgetotpip {
+    width: 72%;
+  }
+  .inputforgetotpbtn {
+    width: 28%;
+    padding-left: 0.7rem;
   }
 
   /* your account */
