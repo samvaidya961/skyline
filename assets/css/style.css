@@ -1317,6 +1317,10 @@ hr {
 }
 .back-to-top img{
   height: 2rem;
+  padding-left: 5px;
+}
+.back-to-top button{
+  padding-left: 5px;
 }
 .back-to-top:hover {
   color: #fff;
