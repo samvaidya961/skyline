@@ -524,7 +524,8 @@ a:hover {
 }
 .viewallbtn button {
   font-size: 13px;
-  width: 100%;
+  width: 44%;
+  margin-left: 27%;
 }
 
 /* shop by brands */
