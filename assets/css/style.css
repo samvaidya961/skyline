@@ -930,6 +930,11 @@ hr {
 .signupinlink a:hover {
   text-decoration: underline var(--blue);
 }
+.forgetpwdlink{
+  margin-bottom: 0.8rem;
+  font-size: 14px;
+  color: var(--blue);
+}
 
 .insightsaccount {
   display: flex;
