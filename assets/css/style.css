@@ -930,7 +930,7 @@ hr {
 .signupinlink a:hover {
   text-decoration: underline var(--blue);
 }
-.forgetpwdlink{
+.forgetpwdlink {
   margin-bottom: 0.8rem;
   font-size: 14px;
   color: var(--blue);
@@ -963,6 +963,23 @@ hr {
 .insightbox:hover {
   color: var(--blue);
   cursor: pointer;
+}
+
+/* password reset */
+#getotpbtn {
+  font-size: 13px;
+}
+#inputforgetotp {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.inputforgetotpip {
+  width: 78%;
+}
+.inputforgetotpbtn {
+  width: 25%;
+  text-align: right;
 }
 
 /* register-login user page ends */
@@ -1321,11 +1338,11 @@ hr {
   background-color: var(--orange);
   padding: 0.3rem;
 }
-.back-to-top img{
+.back-to-top img {
   height: 2rem;
   padding-left: 5px;
 }
-.back-to-top button{
+.back-to-top button {
   padding-left: 5px;
 }
 .back-to-top:hover {
@@ -1564,6 +1581,13 @@ hr {
     margin-left: 4%;
     padding: 1.2rem;
   }
+  .inputforgetotpip{
+    width: 70%;
+  }
+  .inputforgetotpbtn{
+    width: 30%;
+    text-align: right;
+  }
 
   /* your cart start */
   #yourcartitems {
@@ -1758,10 +1782,10 @@ hr {
   }
 
   /* bulk quote */
-  .back-to-top img{
+  .back-to-top img {
     height: 1.7rem;
   }
-  .back-to-top button{
+  .back-to-top button {
     font-size: 14px;
   }
 }
@@ -2288,10 +2312,9 @@ hr {
   }
 
   /* pagination */
-#productspagination {
-  padding: 1rem;
-  display: flex;
-  justify-content: flex-end;
-}
-
+  #productspagination {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
