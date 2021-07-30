@@ -370,20 +370,19 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 .categoryscollitem img {
   height: 2.5rem;
 }
 .categoryscollitem p {
-  font-size: 12px;
+  font-size: 11px;
   color: black;
   width: 100%;
   overflow: hidden;
   white-space: pre-wrap;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 .categoryscollitem p:hover {
