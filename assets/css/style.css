@@ -1207,6 +1207,8 @@ hr {
   font-size: 15px;
   margin-right: 0.4rem;
   color: var(--blue);
+  background-color: var(--grey);
+  padding: 0.3rem;
 }
 .bulkquotecontacts p{
   display: flex;
