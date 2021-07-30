@@ -438,6 +438,9 @@ a:hover {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+.prodname:hover{
+  color: var(--blue);
+}
 .productdetails img {
   height: 0.6rem;
 }
@@ -1245,8 +1248,17 @@ hr {
   margin-right: 0.5rem;
   cursor: pointer;
 }
+.mobnocontactus{
+text-decoration: underline grey;
+}
 #contactusinfocont .material-icons {
   color: var(--blue);
+  background-color: var(--grey);
+  padding: 0.4rem;
+  border-radius: 3px;
+}
+#locationiconaddress{
+  height: 26.78px;
 }
 .contactnos p {
   display: flex;
@@ -2131,6 +2143,10 @@ hr {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
 
+  .categoryscollitem p {
+    font-size: 12px;
+  
+  }
   /* searchbar */
   .searchbargrp {
     margin-left: 1rem;
