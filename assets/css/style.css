@@ -153,6 +153,7 @@ a:hover {
 }
 #allcatbtn img {
   height: 1.5rem;
+  width: 1.5rem;
 }
 #categoriessticktop {
   position: sticky;
@@ -368,15 +369,24 @@ a:hover {
 .categoryscollitem {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  
 }
 .categoryscollitem img {
-  height: 3rem;
+  height: 2.5rem;
 }
-.categoryscollitem span {
+.categoryscollitem p {
   font-size: 12px;
   color: black;
+  width: 100%;
+  overflow: hidden;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
-.categoryscollitem span:hover {
+.categoryscollitem p:hover {
   color: var(--blue);
 }
 
