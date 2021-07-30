@@ -152,8 +152,8 @@ a:hover {
   margin-top: 1rem;
 }
 #allcatbtn img {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 #categoriessticktop {
   position: sticky;
@@ -370,6 +370,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right: 0.3rem;
 }
 .categoryscollitem img {
   height: 2.5rem;
