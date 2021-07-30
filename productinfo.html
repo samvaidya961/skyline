@@ -656,7 +656,7 @@
   <section>
     <div class="returntermscont">
 
-      <a href="">
+      <a data-bs-toggle="modal" data-bs-target="#termsandconditions">
         <div class="returntermsitem">
           <img src="assets/images/term.png" alt="">
           <p class="mb-0">Terms & Conditions</p>
@@ -664,14 +664,14 @@
       </a>
 
 
-      <a href="">
+      <a data-bs-toggle="modal" data-bs-target="#returnpolicymodal">
         <div class="returntermsitem">
           <img src="assets/images/return-box.png" alt="">
           <p class="mb-0">Return Policy</p>
         </div>
       </a>
 
-      <a href="">
+      <a>
         <div class="returntermsitem">
           <img src="assets/images/delivery.png" alt="">
           <p class="mb-0">Skyline Delivered</p>
@@ -1119,14 +1119,163 @@
 
   <!-- terms and conditions modal starts -->
   <section>
+    <div class="modal fade" id="termsandconditions" tabindex="-1" aria-labelledby="termsandconditionsLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div id="privacypolicytext" class="modal-body">
+            <p class="fw-bold">Ordering Information: Place an order</p>
+            <p>All our orders are online. If you wish to place an order over phone, our representative will assist you
+              in creating an online account and placing an order. After you place your order, we will send you an e-mail
+              acknowledgement. Our phone, fax and email addresses are available in the contact us section of website. We
+              will start processing your order only after we have received payment. By placing an order on e-skyline.in,
+              you agree that you are buying for your business needs.</p>
 
+
+            <p class="fw-bold">Our business hours</p>
+            <p>Our hours are 9:30 AM to 6:30 PM Monday to Saturday at 0240-255645.</p>
+
+            <p class="fw-bold">Order delivery times</p>
+
+            <p>If material is in stock or readily available, we shall dispatch in 02 business days and material should
+              reach you on 96 Business hours. For special order or out of stock items delivery times are 01 to 03 weeks.
+              If we are not able to fulfill your order then we will refund your entire amount within 15 business days.
+              If order times exceed what we have committed to, we will contact you to determine if you want to execute
+              the order with the new delivery time. If you do not wish to execute the order at that time, we will refund
+              your entire amount.</p>
+
+            <p class="fw-bold">GST Tax</p>
+
+
+            <p>We invoice all transactions and charge all taxes as per regulation. We charge GST as per the product
+              category determined by Government of India.</p>
+
+
+            <p class="fw-bold">Excise Duty and MODVAT</p>
+
+            <p>We charge excise duty if applicable. Excise is either included in price or separately displayed at time
+              of checkout, whichever is applicable. We provide excise duty/MODVAT documents upon request – Contact us at
+              info@skylinegroup.co.in. We offer tax invoice along with retail invoice where required.
+            </p>
+
+
+            <p class="fw-bold">Payment Methods</p>
+
+            <p>We accept payments via Netbanking, NEFT/RTGS, debit cards, credit cards, cheque. Please mail us your
+              cheque at Skyline Distributors, Plot No. 24, Gut No. 23, Beside Cosmo Films, Sai Ugyognagri, MIDC Area,
+              Waluj, Aurangabad, Maharashtra - 431001 by speedpost or registered post or courier. We cannot claim
+              responsibility for cheques sent through normal mail. Please enclose invoice copy along with your cheque.
+            </p>
+
+
+
+            <p class="fw-bold">Cancellation</p>
+
+            <p>We reserve the right to cancel any order for any reason. Possible reasons for cancellation include, but
+              are not limited to the following:
+            </p>
+            <p>
+            <p>1. Potentially fraudulent order. Before shipping orders, we run a check to make
+              sure they are legitimate. If the check fails, we may cancel your order.</p>
+
+            <p>2. Incorrect pricing. Due to the sometimes volatile market for collectible
+              products, sometimes there are major fluctuations in price. Therefore, we reserve the right to remove any
+              item from any order and provide a full refund to the customer for that item.</p>
+            <p>3. Non-Payment of Non COD orders. If payment is not received within a reasonable
+              amount of time after the order has been placed, we may cancel an order without notice.</p>
+            <p>4. If the order is not serviceable by us due to non-availability of the product
+              among any of our vendors.</p>
+            <p>5. If your pin code is not serviced by any of our courier partners.</p>
+            <p>6. If the procurement is taking longer than 7 working days and you are not
+              willing to wait further.</p>
+            </p>
+
+            <p class="fw-bold">Returns and exchanges</p>
+
+            <p>We offer returns and exchanges only against manufacturing defects. Please contact our office to discuss
+              any return requests.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- terms and conditions modal ends -->
 
 
+  <!-- return policy modal starts -->
+  <section>
+    <div class="modal fade" id="returnpolicymodal" tabindex="-1" aria-labelledby="returnpolicymodalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Return Policy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div id="privacypolicytext" class="modal-body">
+            <p class="fw-bold">OUR RETURN POLICY: IT’S REALLY SIMPLE!</p>
+            <p>The Customer should verify the Product upon its receipt.</p>
+            <p>We assure you of free replacement or repairs in case of any manufacturing defect in the performance of the standard products purchased from us within 15 days of receipt of material at your end.</p>
+            <p>Kindly email our Customer Care team at info@skylinegroup.co.in or call us at 0240-2556133, if case of any questions or queries for timely resolution.</p>
+
+            <table class="table table-bordered mt-3">
+            
+                <tr>
+                  <td class="fw-bold small">REASON OF RETURN</td>
+                  <td class="fw-bold small">RESOLUTION</td>
+                </tr>
+
+                <tr>
+                  <td>Was delivered in a physically damaged condition</td>
+                  <td>Free Replacement</td>
+                </tr>
+
+                <tr>
+                  <td>Has missing parts or accessories</td>
+                  <td>Delivery of Missing parts/ Free Replacement</td>
+                </tr>
+
+                <tr>
+                  <td>Is different from what was ordered</td>
+                  <td>Delivery of material originally ordered</td>
+                </tr>
+
+                <tr>
+                  <td>Is no longer needed (subject to acceptance by us)</td>
+                  <td>Refund subject to valid reason of return</td>
+                </tr>
+
+            </table>
+           
+            <p class="fw-bold">Resolution in various cases is given below:</p>
+            <p>If the fault is on us (mixed up, faulty on arrival), we’ll of course pay for return shipping.</p>
+            <p>As soon as the return or exchange has cleared it’s inspection, you will be notified of your exchange or credit immediately.</p>
 
 
+            <p class="fw-bold">How to Return? Kindly raise a return & service request within 15 days of material delivery. Next Steps:</p>
 
+            <p>
+              <ul>
+                <li>INFORM US</li>
+                <li>PREPARE PACKAGE</li>
+                <li>SEND THE PACKAGE</li>
+                <li>WE RECEIVE THE PACKAGE</li>
+                <li>REPLACEMENT OR REPAIR WITHIN 7 DAYS</li>
+                <li>INFORM US</li>
+              </ul>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- return policy modal ends -->
 
 
 
