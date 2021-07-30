@@ -150,6 +150,7 @@ a:hover {
 /* all category */
 #allcatbtn {
   margin-top: 1rem;
+  margin-right: 0.3rem;
 }
 #allcatbtn img {
   height: 1.4rem;
@@ -371,6 +372,9 @@ a:hover {
   flex-direction: column;
   align-items: center;
   padding-right: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+
 }
 .categoryscollitem img {
   height: 2.5rem;
