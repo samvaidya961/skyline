@@ -1178,6 +1178,21 @@ hr {
   margin-top: 1rem;
   width: 10rem;
 }
+
+.bulkquotecontacts{
+  font-size: 14px;
+}
+.bulkquotecontacts .material-icons{
+  font-size: 15px;
+  margin-right: 0.4rem;
+  color: var(--blue);
+}
+.bulkquotecontacts p{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  cursor: pointer;
+}
 /* bulk quote form ends */
 
 /* contact us page start */
@@ -1214,6 +1229,7 @@ hr {
   display: inline-block;
   font-size: 14px;
   margin-right: 0.5rem;
+  cursor: pointer;
 }
 #contactusinfocont .material-icons {
   color: var(--blue);
