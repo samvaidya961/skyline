@@ -918,6 +918,14 @@ hr {
 .registeruserform .small {
   font-size: 13px;
 }
+#privacypolicylink{
+  color: var(--blue);
+  text-decoration: underline var(--blue);
+}
+#privacypolicytext{
+  font-size: 14px;
+  text-align: justify;
+}
 .mandatoryfield {
   color: rgb(199, 6, 6);
 }
