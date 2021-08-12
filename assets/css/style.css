@@ -1777,7 +1777,6 @@ hr {
     margin-top: 1rem;
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
   #yourordersitembody2 button {
