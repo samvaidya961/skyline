@@ -718,24 +718,41 @@ hr {
 
 /* product variants */
 .prodmodelsvariants {
-  display: flex;
   width: 100%;
-  flex-wrap: wrap;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 .prodvariantitem {
+  display: inline-block;
+  padding: 0rem;
+  width: 10rem;
   border: 1px solid lightgrey;
-  padding: 0.5rem 1rem;
   margin-right: 0.5rem;
 }
 .prodvariantitem:hover {
   border: 1px solid var(--blue);
-  background-color: #4155a734;
+  background-color: #4155a70e;
   cursor: pointer;
 }
 .prodvariantitemactive {
   border: 1px solid var(--blue);
-  background-color: #4155a734;
+  background-color: #4155a70c;
 }
+.prodvariantitem .prodvariantstock {
+  font-size: 12px;
+}
+.prodvarianthead {
+  padding: 0.5rem;
+  border-bottom: 1px solid lightgrey;
+  font-weight: 550;
+  white-space: normal;
+}
+.prodvarianttext {
+  padding: 0.5rem;
+}
+
+
+
 .proddetailstable table {
   margin-top: 1rem;
   font-size: 13px;
