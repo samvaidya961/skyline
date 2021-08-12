@@ -340,9 +340,9 @@
 
 
   <style>
-    #allyourquotescont {
+    .allyourquotescont {
       padding: 1.2rem;
-      padding-top: 0rem;
+
     }
 
     .downloadskylinepdf {
@@ -364,7 +364,8 @@
     #downloadquottext:hover {
       text-decoration: underline var(--blue);
     }
-    .allyourquotedate{
+
+    .allyourquotedate {
       font-style: italic;
       color: grey;
       font-size: 14px;
@@ -375,10 +376,10 @@
 
   <!-- bulk quotes starts -->
   <section>
-    <div id="allyourquotescont">
+    <div class="allyourquotescont">
       <p class="mb-2 fw-bold">Total Quotes : 3</p>
 
-      <div class="allyourquoteitem card p-2 mb-5">
+      <div class="allyourquoteitem card p-2 mt-3 mb-3">
         <div class="allyourquotedate">
           <p class="">12 August, 2021</p>
         </div>
@@ -416,47 +417,53 @@
         </a>
 
       </div>
-
-      <div class="allyourquoteitem card p-2 mb-5">
-        <div class="allyourquotedate">
-          <p class="">12 August, 2021</p>
-        </div>
-
-        <div class="mb-3">
-          <label class="form-label small">Your Quote Request :</label>
-          <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima id corrupti exercitationem aut numquam consectetur dolorum repellat, dignissimos a quo excepturi ullam veritatis maiores molestiae obcaecati ex rerum laudantium odit eum. Sapiente voluptate illo fugiat quam vitae enim ex eaque iure neque. Praesentium possimus dolorem voluptate temporibus ducimus ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae deserunt velit commodi fuga, pariatur illo consectetur cumque non autem nihil facilis quod. Vel iure consectetur corrupti officiis nostrum ullam odio optio, molestiae placeat similique amet ad explicabo minus id accusamus dolore veniam inventore sed ratione nobis reiciendis doloremque! Quaerat.
-          </textarea>
-        </div>
-        <a href="">
-          <div class="downloadskylinepdf mb-4">
-            <span class="material-icons">
-              file_download
-            </span>
-            <span id="downloadquottext">
-              Download Your Quotation
-            </span>
-          </div>
-        </a>
-        <div class="mb-3">
-          <label class="form-label small">Skyline's Reply :</label>
-          <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima id corrupti exercitationem aut numquam consectetur dolorum repellat, dignissimos a quo excepturi ullam veritatis maiores molestiae obcaecati ex rerum laudantium odit eum. Sapiente voluptate illo fugiat quam vitae enim ex eaque iure neque. Praesentium possimus dolorem voluptate temporibus ducimus ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae deserunt velit commodi fuga, pariatur illo consectetur cumque non autem nihil facilis quod. Vel iure consectetur corrupti officiis nostrum ullam odio optio, molestiae placeat similique amet ad explicabo minus id accusamus dolore veniam inventore sed ratione nobis reiciendis doloremque! Quaerat.
-          </textarea>
-        </div>
-
-        <a href="">
-          <div class="downloadskylinepdf">
-            <span class="material-icons">
-              file_download
-            </span>
-            <span id="downloadquottext">
-              Download Skyline's Quotation
-            </span>
-          </div>
-        </a>
-
-      </div>
-      
     </div>
+
+    <div class="b-example-divider"></div>
+
+    <div class="allyourquotescont">
+      <div class="allyourquoteitem card p-2 mt-3 mb-3">
+        <div class="allyourquotedate">
+          <p class="">12 August, 2021</p>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label small">Your Quote Request :</label>
+          <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima id corrupti exercitationem aut numquam consectetur dolorum repellat, dignissimos a quo excepturi ullam veritatis maiores molestiae obcaecati ex rerum laudantium odit eum. Sapiente voluptate illo fugiat quam vitae enim ex eaque iure neque. Praesentium possimus dolorem voluptate temporibus ducimus ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae deserunt velit commodi fuga, pariatur illo consectetur cumque non autem nihil facilis quod. Vel iure consectetur corrupti officiis nostrum ullam odio optio, molestiae placeat similique amet ad explicabo minus id accusamus dolore veniam inventore sed ratione nobis reiciendis doloremque! Quaerat.
+            </textarea>
+        </div>
+        <a href="">
+          <div class="downloadskylinepdf mb-4">
+            <span class="material-icons">
+              file_download
+            </span>
+            <span id="downloadquottext">
+              Download Your Quotation
+            </span>
+          </div>
+        </a>
+        <div class="mb-3">
+          <label class="form-label small">Skyline's Reply :</label>
+          <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima id corrupti exercitationem aut numquam consectetur dolorum repellat, dignissimos a quo excepturi ullam veritatis maiores molestiae obcaecati ex rerum laudantium odit eum. Sapiente voluptate illo fugiat quam vitae enim ex eaque iure neque. Praesentium possimus dolorem voluptate temporibus ducimus ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae deserunt velit commodi fuga, pariatur illo consectetur cumque non autem nihil facilis quod. Vel iure consectetur corrupti officiis nostrum ullam odio optio, molestiae placeat similique amet ad explicabo minus id accusamus dolore veniam inventore sed ratione nobis reiciendis doloremque! Quaerat.
+            </textarea>
+        </div>
+
+        <a href="">
+          <div class="downloadskylinepdf">
+            <span class="material-icons">
+              file_download
+            </span>
+            <span id="downloadquottext">
+              Download Skyline's Quotation
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+
+
   </section>
   <!-- bulk quotes ends -->
 
