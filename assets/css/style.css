@@ -51,7 +51,10 @@ a:hover {
   margin-left: 0.8rem;
   margin-bottom: 1.6rem;
 }
-
+.verysmall {
+  margin-top: 0.3rem;
+  font-size: 11px;
+}
 /* header start */
 
 /* cutom header */
@@ -750,8 +753,6 @@ hr {
 .prodvarianttext {
   padding: 0.5rem;
 }
-
-
 
 .proddetailstable table {
   margin-top: 1rem;
@@ -2245,10 +2246,10 @@ hr {
     margin: 1%;
     width: 18%;
   }
-.procard{
-  margin: 1%;
+  .procard {
+    margin: 1%;
     width: 18%;
-}
+  }
   /* shop by brands */
   .shopbybranditem {
     padding: 1.4rem;
