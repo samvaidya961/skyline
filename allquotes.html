@@ -333,82 +333,135 @@
   <nav id="breadcrumbproductinfo" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Request Bulk Quote</li>
-
+      <li class="breadcrumb-item active" aria-current="page">All Bulk Quote Requests</li>
     </ol>
   </nav>
   <!-- breadcrumb ends -->
 
-  <!-- bulk quote starts -->
+
+  <style>
+    #allyourquotescont {
+      padding: 1.2rem;
+      padding-top: 0rem;
+    }
+
+    .downloadskylinepdf {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    .downloadskylinepdf span {
+      font-size: 13px;
+      color: var(--blue);
+    }
+
+    .downloadskylinepdf .material-icons {
+      font-size: 22px;
+      margin-right: 2px;
+    }
+
+    #downloadquottext:hover {
+      text-decoration: underline var(--blue);
+    }
+    .allyourquotedate{
+      font-style: italic;
+      color: grey;
+      font-size: 14px;
+      font-weight: 550;
+    }
+  </style>
+
+
+  <!-- bulk quotes starts -->
   <section>
-    <div id="bulkquoteform">
-      <h4 class="mb-5 text-center">
-        Request For Quote
-      </h4>
-      <form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Company</label>
-          <input type="text" class="form-control" id="input1">
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">User Name</label>
-          <input type="text" class="form-control" id="input2">
+    <div id="allyourquotescont">
+      <p class="mb-2 fw-bold">Total Quotes : 3</p>
+
+      <div class="allyourquoteitem card p-2 mb-5">
+        <div class="allyourquotedate">
+          <p class="">12 August, 2021</p>
         </div>
 
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email Id</label>
-          <input type="email" class="form-control" id="input3">
+        <div class="mb-3">
+          <label class="form-label small">Your Quote Request :</label>
+          <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima id corrupti exercitationem aut numquam consectetur dolorum repellat, dignissimos a quo excepturi ullam veritatis maiores molestiae obcaecati ex rerum laudantium odit eum. Sapiente voluptate illo fugiat quam vitae enim ex eaque iure neque. Praesentium possimus dolorem voluptate temporibus ducimus ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae deserunt velit commodi fuga, pariatur illo consectetur cumque non autem nihil facilis quod. Vel iure consectetur corrupti officiis nostrum ullam odio optio, molestiae placeat similique amet ad explicabo minus id accusamus dolore veniam inventore sed ratione nobis reiciendis doloremque! Quaerat.
+          </textarea>
         </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Mobile No.</label>
-          <input type="text" class="form-control" id="input4">
-        </div>
-
-        <div class="col-12">
-          <label for="exampleFormControlTextarea1" class="form-label">Describe Your Buying Requirement &
-            Qty.</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-
-
-        <div class="col-md-3">
-          <label for="inputCity" class="form-label">Zip/Pin Code</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-
-        <div class="col-md-3">
-          <label for="inputCity" class="form-label">City</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-
-        <div class="col-md-6">
-          <label for="formFile" class="form-label">File Upload</label>
-          <input class="form-control" type="file" id="formFile">
-        </div>
-
-        <div class="col-12">
-          <button type="submit" class="btn">Send Enquiry</button>
-        </div>
-
-        <div class="col-12 bulkquotecontacts">
-          <p onclick="location.href='tel:9765499823'" class="mb-1">
+        <a href="">
+          <div class="downloadskylinepdf mb-4">
             <span class="material-icons">
-              call
-            </span> <span>+91 9765499823</span>
-          </p>
-          <p onclick="location.href='mailto:sales@skylinegroup.co.in'" class="mb-1">
-            <span class="material-icons">
-              mail_outline
-              </span> <span>sales@skylinegroup.co.in</span>
-          </p>
+              file_download
+            </span>
+            <span id="downloadquottext">
+              Download Your Quotation
+            </span>
+          </div>
+        </a>
+        <div class="mb-3">
+          <label class="form-label small">Skyline's Reply :</label>
+          <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima id corrupti exercitationem aut numquam consectetur dolorum repellat, dignissimos a quo excepturi ullam veritatis maiores molestiae obcaecati ex rerum laudantium odit eum. Sapiente voluptate illo fugiat quam vitae enim ex eaque iure neque. Praesentium possimus dolorem voluptate temporibus ducimus ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae deserunt velit commodi fuga, pariatur illo consectetur cumque non autem nihil facilis quod. Vel iure consectetur corrupti officiis nostrum ullam odio optio, molestiae placeat similique amet ad explicabo minus id accusamus dolore veniam inventore sed ratione nobis reiciendis doloremque! Quaerat.
+          </textarea>
         </div>
-      </form>
+
+        <a href="">
+          <div class="downloadskylinepdf">
+            <span class="material-icons">
+              file_download
+            </span>
+            <span id="downloadquottext">
+              Download Skyline's Quotation
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="allyourquoteitem card p-2 mb-5">
+        <div class="allyourquotedate">
+          <p class="">12 August, 2021</p>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label small">Your Quote Request :</label>
+          <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima id corrupti exercitationem aut numquam consectetur dolorum repellat, dignissimos a quo excepturi ullam veritatis maiores molestiae obcaecati ex rerum laudantium odit eum. Sapiente voluptate illo fugiat quam vitae enim ex eaque iure neque. Praesentium possimus dolorem voluptate temporibus ducimus ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae deserunt velit commodi fuga, pariatur illo consectetur cumque non autem nihil facilis quod. Vel iure consectetur corrupti officiis nostrum ullam odio optio, molestiae placeat similique amet ad explicabo minus id accusamus dolore veniam inventore sed ratione nobis reiciendis doloremque! Quaerat.
+          </textarea>
+        </div>
+        <a href="">
+          <div class="downloadskylinepdf mb-4">
+            <span class="material-icons">
+              file_download
+            </span>
+            <span id="downloadquottext">
+              Download Your Quotation
+            </span>
+          </div>
+        </a>
+        <div class="mb-3">
+          <label class="form-label small">Skyline's Reply :</label>
+          <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima id corrupti exercitationem aut numquam consectetur dolorum repellat, dignissimos a quo excepturi ullam veritatis maiores molestiae obcaecati ex rerum laudantium odit eum. Sapiente voluptate illo fugiat quam vitae enim ex eaque iure neque. Praesentium possimus dolorem voluptate temporibus ducimus ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae deserunt velit commodi fuga, pariatur illo consectetur cumque non autem nihil facilis quod. Vel iure consectetur corrupti officiis nostrum ullam odio optio, molestiae placeat similique amet ad explicabo minus id accusamus dolore veniam inventore sed ratione nobis reiciendis doloremque! Quaerat.
+          </textarea>
+        </div>
+
+        <a href="">
+          <div class="downloadskylinepdf">
+            <span class="material-icons">
+              file_download
+            </span>
+            <span id="downloadquottext">
+              Download Skyline's Quotation
+            </span>
+          </div>
+        </a>
+
+      </div>
+      
     </div>
   </section>
-  <!-- bulk quote ends -->
- 
-  
- 
+  <!-- bulk quotes ends -->
+
+
+
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
