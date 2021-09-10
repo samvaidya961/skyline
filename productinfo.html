@@ -13,6 +13,7 @@
 
   <!-- main css -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/stylezoom.css">
 
   <!-- Favicons -->
   <link href="assets/images/favicon.png" rel="icon">
@@ -389,7 +390,7 @@
     <div id="prodinfocontainer">
 
       <!-- product zoom start -->
-      <div class="containerimages">
+      <!-- <div class="containerimages">
 
         <div class="picture" id="picture">
           <div class="rect" id="rect"></div>
@@ -404,7 +405,31 @@
           <img id="pic6" onmouseover="changeImage('assets/images/category4.png', 6)" src="assets/images/category4.png">
         </div>
         <div class="zoom" id="zoom"></div>
+      </div> -->
+
+      <div id="content-wrapper-zoom">
+
+        <div class="">
+          <div id="img-container">
+            <div id="lens"></div>
+            <img id=featured src="assets/images/category1.png">
+          </div>
+          <div id="slide-wrapper">
+            <img id="slideLeft" class="arrow" src="assets/images/arrow-left.png">
+
+            <div id="slider">
+              <img class="thumbnail active" src="assets/images/category1.png">
+              <img class="thumbnail" src="assets/images/category2.png">
+              <img class="thumbnail" src="assets/images/category3.png">
+
+            </div>
+
+            <img id="slideRight" class="arrow" src="assets/images/arrow-right.png">
+          </div>
+        </div>
+
       </div>
+
       <!-- product zoom end -->
 
       <!-- product info start -->
@@ -570,7 +595,7 @@
 
         </div>
 
-      
+
       </div>
     </div>
 
@@ -1575,9 +1600,10 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-
   <!-- site javascript -->
   <script src="assets/js/site.js"></script>
+  <script type="text/javascript" src="assets/js/slider.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
 
 </body>
 
