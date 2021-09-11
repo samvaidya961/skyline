@@ -345,7 +345,7 @@
       width: 80%;
       padding: 1rem;
       border: 1px solid rgb(226, 226, 226);
-  
+
       margin: 2%;
       padding-right: 1rem;
     }
@@ -362,33 +362,32 @@
     }
 
 
-    .cancelorderproductitem {
+    .cancelorderproductitem1 {
       border: none;
     }
 
-    .checkboxproductitem {
-      border: 2px solid var(--blue);
-    }
-
+  
     .singleproductcancel {
       padding-bottom: 2rem;
     }
-/* return products */
-.seereturnpolicylink {
-            color: var(--blue);
 
-        }
+    /* return products */
+    .seereturnpolicylink {
+      color: var(--blue);
 
-        .seereturnpolicylink:hover {
-            color: var(--blue);
-            text-decoration: underline var(--blue);
-        }
+    }
 
-        .returnorderitemshead {
-            display: flex;
-            justify-content: space-between;
-            padding: 1rem 0.5rem;
-        }
+    .seereturnpolicylink:hover {
+      color: var(--blue);
+      text-decoration: underline var(--blue);
+    }
+
+    .returnorderitemshead {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0.5rem;
+    }
+
     /* Smartphones ----------- */
     @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
       .cancelorderitem {
@@ -400,12 +399,12 @@
 
       }
 
-      .cancelorderproductitem {
-        padding-right: 0rem;
+      .cancelorderproductitem1 {
+        padding-right: 0.7rem;
       }
 
       .cancelreasoncont {
-        padding-right: 0.5rem;
+        padding: 0.5rem;
 
       }
 
@@ -426,13 +425,12 @@
           <p class="yourordersdelivereddate"><strong>Order Placed 14-Jul-2021</strong>
           </p>
           <a class="small seereturnpolicylink" data-bs-toggle="modal" data-bs-target="#returnpolicymodal">
-              Return Policy
+            Return Policy
           </a>
-      </div>
+        </div>
 
-        <div class="form-check mt-4 singleproductcancel">
-          <div class="yourcartitem w-100 cancelorderproductitem">
-            <input class="form-check-input checkboxproductitem" type="checkbox" value="" id="flexCheckDefault">
+        <div class="mt-4 mb-3">
+          <div class="yourcartitem w-100 cancelorderproductitem1">
 
             <div class="yourordersproductimg">
               <img src="assets/images/category1.png" alt="">
@@ -449,25 +447,9 @@
 
             </div>
           </div>
-          <div class="cancelreasoncont mt-3">
-            <div class="mb-3">
-              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option selected>Select Reason to return order</option>
-                <option value="1">Was delivered in a physically damaged condition</option>
-                <option value="2">Has missing parts or accessories</option>
-                <option value="3">Is different from what was ordered</option>
-                <option value="4">Is no longer needed (subject to acceptance by us)</option>
-              </select>
-            </div>
-            <div>
-              <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"
-                placeholder="Write detailed reason to cancel this order"></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="form-check mt-4 singleproductcancel">
-          <div class="yourcartitem w-100 cancelorderproductitem">
-            <input class="form-check-input checkboxproductitem" type="checkbox" value="" id="flexCheckDefault">
+
+
+          <div class="yourcartitem w-100 cancelorderproductitem1">
 
             <div class="yourordersproductimg">
               <img src="assets/images/category1.png" alt="">
@@ -484,10 +466,30 @@
 
             </div>
           </div>
+
+
+          <div class="yourcartitem w-100 cancelorderproductitem1">
+
+            <div class="yourordersproductimg">
+              <img src="assets/images/category1.png" alt="">
+            </div>
+
+            <div class="yourordersproductinfo">
+              <p class="mb-2 yourordersprodname">Finolex 1.5 SQMM SINGLE CORE PVC INS. SINGLE CORE PVC INS.
+                COPPER FLEXIBLE
+                FRLS CBL YEL/GRN
+                AS PER IS 694</p>
+              <p class="mb-2 text-secondary yourordersprodname small">Variant : Product Variant Full Name</p>
+              <p class="mb-2 text-secondary small">Qty: 40</p>
+              <p class="mb-0 fw-bold text-success">₹1,608.00</p>
+
+            </div>
+          </div>
+
           <div class="cancelreasoncont mt-3">
             <div class="mb-3">
               <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option selected>Select Reason to return order</option>
+                <option selected>Select Reason to cancel order</option>
                 <option value="1">Was delivered in a physically damaged condition</option>
                 <option value="2">Has missing parts or accessories</option>
                 <option value="3">Is different from what was ordered</option>
@@ -500,13 +502,14 @@
             </div>
           </div>
         </div>
+
         <div class="cancelallproductsbtn">
-          <button class="btn btn-sm btn-danger">Cancel Selected Items</button>
+          <button class="btn btn-sm btn-danger">Cancel Order</button>
         </div>
       </div>
     </div>
 
-    
+
   </section>
   <!-- cancel order items ends -->
 
@@ -515,84 +518,84 @@
 
 
 
-<!-- return policy modal starts -->
-<section>
-  <div class="modal fade" id="returnpolicymodal" tabindex="-1" aria-labelledby="returnpolicymodalLabel"
+  <!-- return policy modal starts -->
+  <section>
+    <div class="modal fade" id="returnpolicymodal" tabindex="-1" aria-labelledby="returnpolicymodalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Return Policy</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div id="privacypolicytext" class="modal-body">
-                  <p class="fw-bold">OUR RETURN POLICY: IT’S REALLY SIMPLE!</p>
-                  <p>The Customer should verify the Product upon its receipt.</p>
-                  <p>We assure you of free replacement or repairs in case of any manufacturing defect in the
-                      performance of
-                      the standard products purchased from us within 8 days of receipt of material at your end.
-                  </p>
-                  <p>Kindly email our Customer Care team at info@skylinegroup.co.in or call us at 0240-2556133, if
-                      case of any
-                      questions or queries for timely resolution.</p>
-
-                  <table class="table table-bordered mt-3">
-
-                      <tr>
-                          <td class="fw-bold small">REASON OF RETURN</td>
-                          <td class="fw-bold small">RESOLUTION</td>
-                      </tr>
-
-                      <tr>
-                          <td>Was delivered in a physically damaged condition</td>
-                          <td>Free Replacement</td>
-                      </tr>
-
-                      <tr>
-                          <td>Has missing parts or accessories</td>
-                          <td>Delivery of Missing parts/ Free Replacement</td>
-                      </tr>
-
-                      <tr>
-                          <td>Is different from what was ordered</td>
-                          <td>Delivery of material originally ordered</td>
-                      </tr>
-
-                      <tr>
-                          <td>Is no longer needed (subject to acceptance by us)</td>
-                          <td>Refund subject to valid reason of return</td>
-                      </tr>
-
-                  </table>
-
-                  <p class="fw-bold">Resolution in various cases is given below:</p>
-                  <p>If the fault is on us (mixed up, faulty on arrival), we’ll of course pay for return shipping.
-                  </p>
-                  <p>As soon as the return or exchange has cleared it’s inspection, you will be notified of your
-                      exchange or
-                      credit immediately.</p>
-
-                  <p class="fw-bold">How to Return? Kindly raise a return & service request within 15 days of
-                      material
-                      delivery. Next Steps:</p>
-
-                  <p>
-                  <ul>
-                      <li>INFORM US</li>
-                      <li>PREPARE PACKAGE</li>
-                      <li>SEND THE PACKAGE</li>
-                      <li>WE RECEIVE THE PACKAGE</li>
-                      <li>REPLACEMENT OR REPAIR WITHIN 7 DAYS</li>
-                      <li>INFORM US</li>
-                  </ul>
-                  </p>
-
-              </div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Return Policy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
+          <div id="privacypolicytext" class="modal-body">
+            <p class="fw-bold">OUR RETURN POLICY: IT’S REALLY SIMPLE!</p>
+            <p>The Customer should verify the Product upon its receipt.</p>
+            <p>We assure you of free replacement or repairs in case of any manufacturing defect in the
+              performance of
+              the standard products purchased from us within 8 days of receipt of material at your end.
+            </p>
+            <p>Kindly email our Customer Care team at info@skylinegroup.co.in or call us at 0240-2556133, if
+              case of any
+              questions or queries for timely resolution.</p>
+
+            <table class="table table-bordered mt-3">
+
+              <tr>
+                <td class="fw-bold small">REASON OF RETURN</td>
+                <td class="fw-bold small">RESOLUTION</td>
+              </tr>
+
+              <tr>
+                <td>Was delivered in a physically damaged condition</td>
+                <td>Free Replacement</td>
+              </tr>
+
+              <tr>
+                <td>Has missing parts or accessories</td>
+                <td>Delivery of Missing parts/ Free Replacement</td>
+              </tr>
+
+              <tr>
+                <td>Is different from what was ordered</td>
+                <td>Delivery of material originally ordered</td>
+              </tr>
+
+              <tr>
+                <td>Is no longer needed (subject to acceptance by us)</td>
+                <td>Refund subject to valid reason of return</td>
+              </tr>
+
+            </table>
+
+            <p class="fw-bold">Resolution in various cases is given below:</p>
+            <p>If the fault is on us (mixed up, faulty on arrival), we’ll of course pay for return shipping.
+            </p>
+            <p>As soon as the return or exchange has cleared it’s inspection, you will be notified of your
+              exchange or
+              credit immediately.</p>
+
+            <p class="fw-bold">How to Return? Kindly raise a return & service request within 15 days of
+              material
+              delivery. Next Steps:</p>
+
+            <p>
+            <ul>
+              <li>INFORM US</li>
+              <li>PREPARE PACKAGE</li>
+              <li>SEND THE PACKAGE</li>
+              <li>WE RECEIVE THE PACKAGE</li>
+              <li>REPLACEMENT OR REPAIR WITHIN 7 DAYS</li>
+              <li>INFORM US</li>
+            </ul>
+            </p>
+
+          </div>
+        </div>
       </div>
-  </div>
-</section>
-<!-- return policy modal ends -->
+    </div>
+  </section>
+  <!-- return policy modal ends -->
 
 
   <!--site footer start-->
