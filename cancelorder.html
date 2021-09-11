@@ -352,7 +352,7 @@
 
     .cancelallproductsbtn {
       width: 100%;
-      padding: 2rem;
+      padding: 1rem;
       text-align: center;
       padding-top: 0rem;
     }
@@ -397,6 +397,7 @@
       .singleproductcancel {
         border-bottom: 1px solid rgb(223, 223, 223);
         padding-bottom: 2rem;
+        margin-bottom: 1.5rem;
       }
     }
   </style>
@@ -421,7 +422,7 @@
                 COPPER FLEXIBLE
                 FRLS CBL YEL/GRN
                 AS PER IS 694</p>
-              <p class="mb-2 yourordersprodname small">Variant : Product Variant Full Name</p>
+              <p class="mb-2 text-secondary yourordersprodname small">Variant : Product Variant Full Name</p>
               <p class="mb-2 text-secondary small">Qty: 40</p>
               <p class="mb-0 fw-bold text-success">₹1,608.00</p>
 
@@ -442,9 +443,7 @@
                 placeholder="Write detailed reason to cancel this order"></textarea>
             </div>
           </div>
-
         </div>
-
         <div class="form-check mt-4 singleproductcancel">
           <div class="yourcartitem w-100 cancelorderproductitem">
             <input class="form-check-input checkboxproductitem" type="checkbox" value="" id="flexCheckDefault">
@@ -458,7 +457,7 @@
                 COPPER FLEXIBLE
                 FRLS CBL YEL/GRN
                 AS PER IS 694</p>
-              <p class="mb-2 yourordersprodname small">Variant : Product Variant Full Name</p>
+              <p class="mb-2 text-secondary yourordersprodname small">Variant : Product Variant Full Name</p>
               <p class="mb-2 text-secondary small">Qty: 40</p>
               <p class="mb-0 fw-bold text-success">₹1,608.00</p>
 
@@ -479,15 +478,14 @@
                 placeholder="Write detailed reason to cancel this order"></textarea>
             </div>
           </div>
-
         </div>
-
+        <div class="cancelallproductsbtn">
+          <button class="btn btn-sm btn-danger">Cancel Selected Items</button>
+        </div>
       </div>
     </div>
 
-    <div class="cancelallproductsbtn">
-      <button class="btn btn-sm btn-danger">Cancel Selected Items</button>
-    </div>
+    
   </section>
   <!-- cancel order items ends -->
 
