@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
-
     <meta name="author" content="Kunal Pandharkar">
     <meta name="twitter:title" content="Skyline Distributors | Aurangabad">
     <meta name="twitter:description"
@@ -451,8 +450,8 @@
 
                 <div class="form-check mt-4 singleproductcancel">
                     <div class="yourcartitem w-100 cancelorderproductitem">
-                        <input class="form-check-input checkboxproductitem" type="checkbox" value=""
-                            id="flexCheckDefault">
+                        <input class="form-check-input checkboxproductitem" type="checkbox" value="" id="return-checkbox1"
+                            onclick="addreturnreason()">
 
                         <div class="yourordersproductimg">
                             <img src="assets/images/category1.png" alt="">
@@ -471,26 +470,38 @@
 
                         </div>
                     </div>
-                    <div class="cancelreasoncont mt-3">
-                        <div class="mb-3">
-                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                <option selected>Select Reason to return order</option>
-                                <option value="1">Was delivered in a physically damaged condition</option>
-                                <option value="2">Has missing parts or accessories</option>
-                                <option value="3">Is different from what was ordered</option>
-                                <option value="4">Is no longer needed (subject to acceptance by us)</option>
-                            </select>
-                        </div>
-                        <div>
-                            <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"
-                                placeholder="Write detailed reason to cancel this order"></textarea>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="form-check mt-4 singleproductcancel">
                     <div class="yourcartitem w-100 cancelorderproductitem">
                         <input class="form-check-input checkboxproductitem" type="checkbox" value=""
-                            id="flexCheckDefault">
+                        id="return-checkbox2"
+                        onclick="addreturnreason()">
+
+                        <div class="yourordersproductimg">
+                            <img src="assets/images/category1.png" alt="">
+                        </div>
+
+                        <div class="yourordersproductinfo">
+                            <p class="mb-2 yourordersprodname">Finolex 1.5 SQMM SINGLE CORE PVC INS. SINGLE CORE PVC
+                                INS.
+                                COPPER FLEXIBLE
+                                FRLS CBL YEL/GRN
+                                AS PER IS 694</p>
+                            <p class="mb-2 text-secondary yourordersprodname small">Variant : Product Variant Full Name
+                            </p>
+                            <p class="mb-2 text-secondary small">Qty: 40</p>
+                            <p class="mb-0 fw-bold text-success">₹1,608.00</p>
+
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="form-check mt-4 singleproductcancel">
+                    <div class="yourcartitem w-100 cancelorderproductitem">
+                        <input class="form-check-input checkboxproductitem" type="checkbox" value=""
+                        id="return-checkbox3"
+                        onclick="addreturnreason()">
 
                         <div class="yourordersproductimg">
                             <img src="assets/images/category1.png" alt="">
@@ -519,19 +530,18 @@
                                 <option value="4">Is no longer needed (subject to acceptance by us)</option>
                             </select>
                         </div>
-                        <div>
-                            <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"
-                                placeholder="Write detailed reason to cancel this order"></textarea>
+                        <div id="textarea-reason">
+                            <!-- <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"
+                                placeholder="Write detailed reason to cancel this order"></textarea> -->
                         </div>
                     </div>
                 </div>
 
-
                 <div class="mb-3 pickupaddresscont">
                     <label for="exampleFormControlInput6" class="form-label small">Your Pick-up Address</label>
-                   
+
                     <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"
-                    placeholder="Enter detailed pick-up address"></textarea>
+                        placeholder="Enter detailed pick-up address"></textarea>
                 </div>
 
 
@@ -626,9 +636,6 @@
         </div>
     </section>
     <!-- return policy modal ends -->
-
-
-
 
     <!--site footer start-->
     <section>
@@ -928,14 +935,45 @@
     </footer>
     <!-- End  Footer -->
 
+
+
+
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-
     <!-- site javascript -->
     <script src="assets/js/site.js"></script>
+
+    <script>
+        let count = 0;
+        function addreturnreason() {
+            var checkBox = document.getElementById("return-product");
+            
+            var textarea = document.getElementById("textarea-reason")
+            const x = document.createElement("TEXTAREA");
+
+
+            if (checkBox.checked == true) {
+                count += 1;
+
+                x.setAttribute("type", "text");
+                x.setAttribute("name", "reason" + count);
+                x.setAttribute("id", "reason" + count);
+                textarea.appendChild(x);
+            }
+
+            if (checkBox.checked == false) {
+                for (let i = 1; i <= count; i++) {
+                    var myobj = document.getElementById("reason" + i);
+                    myobj.remove();
+                    count=0;
+                }
+            }
+        }
+    </script>
 
 </body>
 
